@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="hd_colorPrimary">@color/google_lightbluea700</color>
-    <color name="hd_colorPrimaryDark">@color/google_lightblue700</color>
-    <color name="hd_colorPrimaryLight">@color/google_lightbluea400</color>
-
-    <color name="hd_colorSecondary">@color/google_cyana700</color>
-    <color name="hd_colorSecondaryDark">@color/google_cyan700</color>
-    <color name="hd_colorSecondaryLight">@color/google_cyana400</color>
-
-    <color name="hd_colorAccent">@color/hd_colorPrimaryDark</color>
-
+    <!-- 主题色 -->
+    <color name="hd_themePrimary">@color/google_lightbluea700</color>
+    <color name="hd_themePrimaryDark">@color/google_lightblue700</color>
+    <color name="hd_themePrimaryLight">@color/google_lightbluea400</color>
+    <!-- 辅助色 -->
+    <color name="hd_themeSecondary">@color/google_cyana700</color>
+    <color name="hd_themeSecondaryDark">@color/google_cyan700</color>
+    <color name="hd_themeSecondaryLight">@color/google_cyana400</color>
+    <!-- 着重色 -->
+    <color name="hd_themeAccent">@color/hd_themePrimaryDark</color>
+    <!-- 底部导航栏颜色 -->
     <color name="hd_navigationBarColor">@color/google_grey900</color>
+    <!-- 窗口默认色 -->
     <color name="hd_windowBackground">@color/google_grey50</color>
-
-    <color name="hd_textColorPrimary">@color/google_grey900</color>
-    <color name="hd_textColorSecondary">@color/google_grey600</color>
-
-    <color name="hd_dividerColor">@color/google_grey400</color>
+    <!-- 主要文字颜色 -->
+    <color name="hd_textPrimary">@color/google_grey900</color>
+    <!-- 次要文字颜色 -->
+    <color name="hd_textSecondary">@color/google_grey600</color>
+    <!-- 分割线颜色 -->
+    <color name="hd_divider">@color/google_grey400</color>
 
 </resources>
