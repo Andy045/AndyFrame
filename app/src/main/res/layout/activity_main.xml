@@ -7,11 +7,10 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <com.andy.titlebar.HandyTitlebar
+    <com.andy.titlebar.Titlebar
         android:id="@+id/titlebar"
         style="@style/HandyTitlebarTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:hd_isTranslucentStatus="true" />
-
 </LinearLayout>
