@@ -11,8 +11,14 @@
         <!-- colorAccent CheckBox，RadioButton，SwitchCompat等一般控件的选中效果默认采用该颜色 -->
         <item name="colorAccent">@color/hd_themeAccent</item>
 
-        <!-- 各控件的默认颜色 -->
+        <!-- EditText下划线 的默认颜色 -->
         <item name="colorControlNormal">@color/hd_themeSecondary</item>
+
+        <!-- CheckBox RadioButton等控件 的选中颜色 -->
+        <item name="colorControlActivated">@color/hd_themeAccent</item>
+
+        <!-- ChexkBox Switch等控件 的水波纹颜色 -->
+        <item name="colorControlHighlight">@color/hd_themeSecondaryLight</item>
 
         <!-- Button文本颜色 -->
         <item name="colorOnPrimary">@color/hd_textWhite</item>
