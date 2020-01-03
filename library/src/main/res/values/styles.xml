@@ -23,7 +23,7 @@
     </style>
 
     <!-- Base activity theme. -->
-    <style name="HandyFrameActivityTheme">
+    <style name="HandyFrameActivityTheme" parent="HandyFrameAppTheme">
         <item name="android:configChanges">orientation|keyboardHidden|screenSize</item>
         <item name="android:exported">false</item>
         <item name="android:launchMode">standard</item>
