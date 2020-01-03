@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- 主题色 -->
-    <color name="hd_themePrimary">@color/google_lightbluea700</color>
-    <color name="hd_themePrimaryDark">@color/google_lightblue700</color>
-    <color name="hd_themePrimaryLight">@color/google_lightbluea400</color>
+    <color name="hd_themePrimary">@color/google_lightblue600</color>
+    <color name="hd_themePrimaryDark">@color/google_lightblue800</color>
+    <color name="hd_themePrimaryLight">@color/google_lightblue400</color>
     <!-- 辅助色 -->
-    <color name="hd_themeSecondary">@color/google_cyana700</color>
-    <color name="hd_themeSecondaryDark">@color/google_cyan700</color>
-    <color name="hd_themeSecondaryLight">@color/google_cyana400</color>
+    <color name="hd_themeSecondary">@color/google_grey600</color>
+    <color name="hd_themeSecondaryDark">@color/google_grey800</color>
+    <color name="hd_themeSecondaryLight">@color/google_grey400</color>
     <!-- 着重色 -->
     <color name="hd_themeAccent">@color/hd_themePrimaryDark</color>
     <!-- 底部导航栏颜色 -->
@@ -18,6 +18,8 @@
     <color name="hd_textPrimary">@color/google_grey900</color>
     <!-- 次要文字颜色 -->
     <color name="hd_textSecondary">@color/google_grey600</color>
+    <!-- 按钮文字颜色 -->
+    <color name="hd_textWhite">@color/google_grey0</color>
     <!-- 分割线颜色 -->
     <color name="hd_divider">@color/google_grey400</color>
 
