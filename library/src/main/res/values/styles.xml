@@ -3,41 +3,23 @@
     <!-- Base application theme. -->
     <style name="HandyFrameAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- colorPrimary 应用的主要色调，actionBar默认使用该颜色，Toolbar导航栏的底色 -->
-        <item name="colorPrimary">@color/hd_colorPrimary</item>
+        <item name="colorPrimary">@color/hd_themePrimary</item>
         <!-- colorPrimaryDark 应用的主要暗色调，statusBarColor默认使用该颜色 -->
-        <item name="colorPrimaryDark">@color/hd_colorPrimaryDark</item>
-
+        <item name="colorPrimaryDark">@color/hd_themePrimaryDark</item>
         <!-- colorAccent CheckBox，RadioButton，SwitchCompat等一般控件的选中效果默认采用该颜色 -->
-        <item name="colorAccent">@color/hd_colorSecondary</item>
-
-        <!-- colorButtonNormal 默认按钮的背景颜色 -->
-        <item name="colorButtonNormal">@color/hd_colorSecondary</item>
-        <!-- colorControlNormal CheckBox，RadioButton，SwitchCompat等默认状态的颜色。 -->
-        <item name="colorControlNormal">@color/hd_colorSecondary</item>
-        <!-- colorControlHighlight 控件按压时的色调 -->
-        <item name="colorControlHighlight">@color/hd_colorSecondaryLight</item>
-        <!-- colorControlActivated 控件选中时的颜色，默认使用colorAccent -->
-        <item name="colorControlActivated">@color/hd_colorSecondary</item>
-
-        <!-- textColorPrimary 应用的主要文字颜色，actionBar的标题文字默认使用该颜色 -->
-        <item name="android:textColorPrimary">@color/hd_textColorPrimary</item>
-        <item name="android:textColorSecondary">@color/hd_textColorSecondary</item>
-
-        <!-- textColorPrimaryDisableOnly RadioButton checkbox等控件的文字 -->
-        <item name="android:textColorPrimaryDisableOnly">@color/hd_textColorPrimary</item>
-
-        <!-- windowBackground 窗口背景颜色 -->
-        <item name="android:windowBackground">@color/google_grey50</item>
-
+        <item name="colorAccent">@color/hd_themeSecondary</item>
         <!-- statusBarColor 状态栏颜色，默认使用colorPrimaryDark -->
         <item name="android:statusBarColor" tools:targetApi="lollipop">
-            @color/hd_colorPrimaryDark
+            @color/hd_themePrimaryDark
         </item>
-
         <!-- android:navigationBarColor 底部栏颜色 -->
         <item name="android:navigationBarColor" tools:targetApi="lollipop">
             @color/hd_navigationBarColor
         </item>
+        <!-- windowBackground 窗口背景颜色 -->
+        <item name="android:windowBackground">@color/google_grey50</item>
+        <!-- Button文本颜色 -->
+        <item name="colorOnPrimary">@color/google_grey0</item>
     </style>
 
 </resources>
