@@ -21,4 +21,10 @@
     <!-- 分割线颜色 -->
     <color name="hd_divider">@color/google_grey400</color>
 
+    <!--==================== Snackbar ====================-->
+    <color name="hd_snackbar_messageColor">@color/google_grey50</color>
+    <color name="hd_snackbar_actionColor">@color/google_lightbluea400</color>
+    <color name="hd_snackbar_background">@color/google_grey800</color>
+    <color name="hd_snackbar_background_success">@color/google_green800</color>
+    <color name="hd_snackbar_background_error">@color/google_red800</color>
 </resources>
