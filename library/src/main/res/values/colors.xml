@@ -9,7 +9,7 @@
     <color name="hd_themeSecondaryDark">@color/google_grey800</color>
     <color name="hd_themeSecondaryLight">@color/google_grey400</color>
     <!-- 着重色 -->
-    <color name="hd_themeAccent">@color/hd_themePrimaryDark</color>
+    <color name="hd_themeAccent">@color/hd_themePrimary</color>
     <!-- 底部导航栏颜色 -->
     <color name="hd_navigationBarColor">@color/google_grey900</color>
     <!-- 窗口默认色 -->
