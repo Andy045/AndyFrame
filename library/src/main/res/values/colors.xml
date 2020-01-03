@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="hd_colorPrimary">@color/google_lightbluea700</color>
+    <color name="hd_colorPrimaryDark">@color/google_lightblue700</color>
+    <color name="hd_colorPrimaryLight">@color/google_lightbluea400</color>
+
+    <color name="hd_colorSecondary">@color/google_cyana700</color>
+    <color name="hd_colorSecondaryDark">@color/google_cyan700</color>
+    <color name="hd_colorSecondaryLight">@color/google_cyana400</color>
+
+    <color name="hd_colorAccent">@color/hd_colorPrimaryDark</color>
+
+    <color name="hd_navigationBarColor">@color/google_grey900</color>
+    <color name="hd_windowBackground">@color/google_grey50</color>
+
+    <color name="hd_textColorPrimary">@color/google_grey900</color>
+    <color name="hd_textColorSecondary">@color/google_grey600</color>
+
+    <color name="hd_dividerColor">@color/google_grey400</color>
+
+</resources>
