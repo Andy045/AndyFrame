@@ -40,4 +40,10 @@
         <item name="android:windowSoftInputMode">adjustPan|stateAlwaysHidden</item>
     </style>
 
+    <style name="HandyFrameTitlebar" parent="HandyTitlebarTheme">
+        <item name="hd_isTranslucentStatus">true</item>
+        <item name="hd_statusbarBackgroundColor">@color/hd_themePrimaryDark</item>
+        <item name="hd_titlebarBackground">@color/hd_themePrimary</item>
+        <item name="hd_bottomLineHeight">@dimen/hd_dp0</item>
+    </style>
 </resources>
