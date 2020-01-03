@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="HandyFrameMaterialButton">
+        <item name="android:minHeight">@dimen/hd_dp0</item>
+        <item name="android:minWidth">@dimen/hd_dp0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/google_spacing_medium</item>
+        <item name="android:background">@color/hd_themePrimary</item>
+        <item name="android:backgroundTint">@color/hd_themePrimary</item>
+        <item name="rippleColor">@color/hd_themePrimaryLight</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/hd_sp14</item>
+        <item name="android:textColor">@color/hd_textWhite</item>
+        <item name="android:insetLeft">@dimen/hd_dp0</item>
+        <item name="android:insetRight">@dimen/hd_dp0</item>
+        <item name="android:insetTop">@dimen/hd_dp0</item>
+        <item name="android:insetBottom">@dimen/hd_dp0</item>
+    </style>
+</resources>
