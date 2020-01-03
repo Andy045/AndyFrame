@@ -22,4 +22,13 @@
         <item name="colorOnPrimary">@color/google_grey0</item>
     </style>
 
+    <!-- Base activity theme. -->
+    <style name="HandyFrameActivityTheme">
+        <item name="android:configChanges">orientation|keyboardHidden|screenSize</item>
+        <item name="android:exported">false</item>
+        <item name="android:launchMode">standard</item>
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowSoftInputMode">adjustPan|stateAlwaysHidden</item>
+    </style>
+
 </resources>
