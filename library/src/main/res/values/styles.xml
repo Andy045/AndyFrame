@@ -17,7 +17,7 @@
         <!-- CheckBox RadioButton等控件 的选中颜色 -->
         <item name="colorControlActivated">@color/hd_themePrimary</item>
 
-        <!-- ChexkBox Switch等控件 的水波纹颜色 -->
+        <!-- ChexkBox RadioButton Switch等控件 的水波纹颜色 -->
         <item name="colorControlHighlight">@color/hd_themeSecondaryLight</item>
 
         <!-- Button文本颜色 -->
