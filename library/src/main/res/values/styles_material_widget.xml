@@ -1,21 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="HandyFrameMaterialButton">
-        <item name="android:minHeight">@dimen/hd_dp0</item>
-        <item name="android:minWidth">@dimen/hd_dp0</item>
-        <item name="android:gravity">center</item>
-        <item name="android:padding">@dimen/google_spacing_medium</item>
-        <item name="android:background">@color/hd_themePrimary</item>
-        <item name="android:backgroundTint">@color/hd_themePrimary</item>
-        <item name="rippleColor">@color/hd_themePrimaryLight</item>
-        <item name="android:typeface">sans</item>
-        <item name="android:textAllCaps">false</item>
-        <item name="android:textSize">@dimen/hd_sp14</item>
-        <item name="android:textColor">@color/hd_textWhite</item>
-        <item name="android:insetLeft">@dimen/hd_dp0</item>
-        <item name="android:insetRight">@dimen/hd_dp0</item>
-        <item name="android:insetTop">@dimen/hd_dp0</item>
-        <item name="android:insetBottom">@dimen/hd_dp0</item>
+    <style name="HandyFrame_MaterialButton_Default" parent="Widget.MaterialComponents.Button">
+        <!-- 主题扩展：Widget.MaterialComponents.Button -->
+        <!-- 主题扩展：Widget.MaterialComponents.Button.TextButton -->
+        <!-- 主题扩展：Widget.MaterialComponents.Button.OutlinedButton -->
+        <!-- 主题扩展：Widget.MaterialComponents.Button.UnelevatedButton -->
+
+        <!-- 最小宽度（android:minWidth，默认：88dp） -->
+        <!-- 最小高度（android:minHeight，默认：48dp） -->
+
+        <!-- 内间距（android:padding，默认：无） -->
+        <!-- 内间距（android:paddingLeft，默认：16dp） -->
+        <!-- 内间距（android:paddingRight，默认：16dp） -->
+        <!-- 内间距（android:paddingStart，默认：16dp） -->
+        <!-- 内间距（android:paddingEnd，默认：16dp） -->
+        <!-- 内间距（android:paddingTop，默认：4dp） -->
+        <!-- 内间距（android:paddingBottom，默认：4dp） -->
+
+        <!-- 阴影间距（android:insetLeft，默认：0dp） -->
+        <!-- 阴影间距（android:insetRight，默认：0dp） -->
+        <!-- 阴影间距（android:insetTop，默认：6dp） -->
+        <!-- 阴影间距（android:insetBottom，默认：6dp） -->
+
+        <!-- 背景颜色（app:backgroundTint，默认：?attr/colorPrimary） -->
+        <!-- 背景颜色（app:backgroundTintMode，默认：Mode.SRC_IN） -->
+
+        <!-- 图标（app:icon，默认：无） -->
+        <!-- 图标颜色（app:iconTint，默认：?attr/colorOnPrimary） -->
+        <!-- 图标大小（app:iconSize，默认：无） -->
+        <!-- 图标位置（app:iconGravity，默认：无） -->
+        <!-- 图标内间距（app:iconPadding，默认：无） -->
+
+        <!-- 边框颜色（app:strokeColor，默认：?attr/colorOnSurface） -->
+        <!-- 边框大小（app:strokeWidth，默认：无） -->
+
+        <!-- 文本字体（android:typeface，默认：sans-serif-medium） -->
+        <!-- 文本位置（android:gravity，默认：center） -->
+        <!-- 文本大小（android:textSize，默认：14sp） -->
+        <!-- 文本颜色（android:textColor，默认：?attr/colorPrimary 或 ?attr/colorOnPrimary） -->
+        <!-- 英文强制大写（android:textAllCaps，默认：true） -->
+
+        <!-- 圆角大小（cornerRadius，默认：@null） -->
+        <!-- 取消阴影（android:stateListAnimator = @null，elevation = 0dp，默认：） -->
+        <!-- 水波纹颜色（app:rippleColor，默认：?attr/colorOnPrimary） -->
     </style>
+
+
+    <style name="HandyFrameMaterialCheckBox" parent="Widget.MaterialComponents.CompoundButton.CheckBox"></style>
 </resources>
