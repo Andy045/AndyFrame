@@ -8,23 +8,26 @@
         <!-- 应用的主要暗色调，statusBarColor默认颜色 -->
         <item name="colorPrimaryDark">@color/hd_themePrimaryDark</item>
 
+        <!-- 控件的水波纹颜色 -->
+        <item name="colorControlHighlight">@color/hd_themeSecondaryLight</item>
+
         <!-- CheckBox RadioButton Switch的选中颜色 -->
         <item name="colorAccent">@color/hd_themeAccent</item>
 
-        <!-- CheckBox RadioButton Switch的选中颜色 -->
+        <!-- CheckBox RadioButton Switch的选中颜色 (使用Material主题时，替代colorAccent) -->
         <item name="colorControlActivated">@color/hd_themeAccent</item>
-
-        <!-- ChexkBox RadioButton Switch的水波纹颜色 -->
-        <item name="colorControlHighlight">@color/hd_themeSecondaryLight</item>
-
-        <!-- EditText的下划线颜色 (不使用Material主题时，CheckBox RadioButton的边框颜色) -->
-        <item name="colorControlNormal">@color/hd_themeSecondary</item>
 
         <!-- Button的文本颜色 -->
         <item name="colorOnPrimary">@color/hd_textWhite</item>
 
+        <!-- EditText的文本颜色 -->
+        <item name="android:textColorPrimary">@color/hd_textPrimary</item>
+
         <!-- ChexkBox RadioButton Switch的文本颜色 -->
         <item name="android:textColorPrimaryDisableOnly">@color/hd_textPrimary</item>
+
+        <!-- EditText的下划线颜色 (不使用Material主题时，CheckBox RadioButton的边框颜色) -->
+        <item name="colorControlNormal">@color/hd_themeSecondary</item>
 
         <!-- statusBarColor 状态栏颜色，默认使用colorPrimaryDark -->
         <item name="android:statusBarColor" tools:targetApi="lollipop">
