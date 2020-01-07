@@ -13,7 +13,7 @@
         tools:ignore="GoogleAppIndexingWarning">
 
         <activity
-            android:name=".MainActivity"
+            android:name=".MaterialDemoActivity"
             android:exported="true"
             android:theme="@style/HandyFrameActivityTheme">
             <intent-filter>
@@ -22,9 +22,9 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".MaterialDemoActivity"
-            android:theme="@style/HandyFrameActivityTheme" />
+        <!--        <activity-->
+        <!--            android:name=".MaterialDemoActivity"-->
+        <!--            android:theme="@style/HandyFrameActivityTheme" />-->
     </application>
 
 </manifest>

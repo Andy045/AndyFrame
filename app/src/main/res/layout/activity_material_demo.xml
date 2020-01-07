@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.andy.titlebar.Titlebar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/HandyFrameTitlebar" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/HandyFrame_MaterialButton_Default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MaterialButton" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        style="@style/HandyFrame_MaterialCheckBox_Default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="国" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        style="@style/HandyFrame_MaterialCheckBox_Default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="国"
+        app:useMaterialThemeColors="false" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            style="@style/HandyFrame_MaterialRadioButton_Default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="国" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            style="@style/HandyFrame_MaterialRadioButton_Default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AAAAA" />
+    </RadioGroup>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        style="@style/HandyFrame_MaterialSwitch_Default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="abcde" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        style="@style/HandyFrame_MaterialSwitch_Default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:enabled="false"
+        android:text="abcde" />
+</LinearLayout>
