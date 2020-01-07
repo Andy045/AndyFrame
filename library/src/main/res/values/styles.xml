@@ -2,10 +2,10 @@
 
     <!-- Base application theme. -->
     <style name="HandyFrameAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <!-- colorPrimary 应用的主要色调，actionBar默认使用该颜色，Toolbar导航栏的底色 -->
+        <!-- colorPrimary 应用的主要色调，Toolbar默认颜色，Button默认颜色 -->
         <item name="colorPrimary">@color/hd_themePrimary</item>
 
-        <!-- colorPrimaryDark 应用的主要暗色调，statusBarColor默认使用该颜色 -->
+        <!-- colorPrimaryDark 应用的主要暗色调，statusBarColor默认颜色 -->
         <item name="colorPrimaryDark">@color/hd_themePrimaryDark</item>
 
         <!-- colorAccent CheckBox，RadioButton，SwitchCompat等一般控件的选中效果默认采用该颜色 -->
@@ -15,7 +15,7 @@
         <item name="colorControlNormal">@color/hd_themeSecondary</item>
 
         <!-- CheckBox RadioButton等控件 的选中颜色 -->
-        <item name="colorControlActivated">@color/hd_themeAccent</item>
+        <item name="colorControlActivated">@color/hd_themePrimary</item>
 
         <!-- ChexkBox Switch等控件 的水波纹颜色 -->
         <item name="colorControlHighlight">@color/hd_themeSecondaryLight</item>
