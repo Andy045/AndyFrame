@@ -57,5 +57,7 @@
         <item name="hd_statusbarBackgroundColor">@color/hd_themePrimaryDark</item>
         <item name="hd_titlebarBackground">@color/hd_themePrimary</item>
         <item name="hd_bottomLineHeight">@dimen/hd_dp0</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
     </style>
 </resources>
