@@ -11,4 +11,4 @@ import com.andy.basic.mvp.BasePresenter
  * @author LiuJie https://github.com/Handy045
  * @date Created in 2019-12-30 17:21
  */
-class FrameFragment<A : BaseActivity<P>, P : BasePresenter> : BaseFragment<A, P>()
+open class FrameFragment<A : BaseActivity<P>, P : BasePresenter> : BaseFragment<A, P>()

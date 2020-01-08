@@ -9,4 +9,4 @@ import com.andy.basic.base.BaseApplication
  * @author LiuJie https://github.com/Handy045
  * @date Created in 2019-12-30 17:21
  */
-class FrameApplication : BaseApplication()
+open class FrameApplication : BaseApplication()
