@@ -1,27 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--==================== AppTheme ====================-->
     <!-- 主题色 -->
     <color name="hd_themePrimary">@color/google_lightblue600</color>
     <color name="hd_themePrimaryDark">@color/google_lightblue800</color>
     <color name="hd_themePrimaryLight">@color/google_lightblue400</color>
+
     <!-- 辅助色 -->
     <color name="hd_themeSecondary">@color/google_grey600</color>
     <color name="hd_themeSecondaryDark">@color/google_grey800</color>
     <color name="hd_themeSecondaryLight">@color/google_grey400</color>
+
     <!-- 着重色 -->
     <color name="hd_themeAccent">@color/hd_themePrimary</color>
+
     <!-- 主要文字颜色 -->
     <color name="hd_textPrimary">@color/google_grey900</color>
     <!-- 次要文字颜色 -->
     <color name="hd_textSecondary">@color/google_grey600</color>
     <!-- 主题色背景下的文字颜色 -->
     <color name="hd_textOpposite">@color/google_grey0</color>
+
     <!-- 分割线颜色 -->
     <color name="hd_divider">@color/google_grey400</color>
+
     <!-- 底部导航栏颜色 -->
     <color name="hd_navigationBarColor">@color/google_grey900</color>
+
     <!-- 窗口默认色 -->
     <color name="hd_windowBackground">@color/google_grey50</color>
+
+    <!--==================== Titlebar ====================-->
+    <color name="hd_titlebar_normal">@color/google_grey0</color>
+    <color name="hd_titlebar_press">@color/google_grey400</color>
 
     <!--==================== Snackbar ====================-->
     <color name="hd_snackbar_messageColor">@color/google_grey50</color>
