@@ -4,7 +4,6 @@
     <style name="HandyFrameAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- 应用的主要色调，Toolbar默认颜色，Button默认颜色 -->
         <item name="colorPrimary">@color/hd_themePrimary</item>
-
         <!-- 应用的主要暗色调，statusBarColor默认颜色 -->
         <item name="colorPrimaryDark">@color/hd_themePrimaryDark</item>
 
@@ -12,17 +11,14 @@
         <item name="colorControlHighlight">@color/hd_themeSecondaryLight</item>
 
         <!-- CheckBox RadioButton Switch的选中颜色 -->
-        <item name="colorAccent">@color/hd_themeAccent</item>
-
+        <item name="colorAccent">@color/hd_themePrimary</item>
         <!-- CheckBox RadioButton Switch的选中颜色 (使用Material主题时，替代colorAccent) -->
-        <item name="colorControlActivated">@color/hd_themeAccent</item>
+        <item name="colorControlActivated">@color/hd_themePrimary</item>
 
         <!-- Button的文本颜色 -->
-        <item name="colorOnPrimary">@color/hd_textWhite</item>
-
+        <item name="colorOnPrimary">@color/hd_textOpposite</item>
         <!-- EditText的文本颜色 -->
         <item name="android:textColorPrimary">@color/hd_textPrimary</item>
-
         <!-- ChexkBox RadioButton Switch的文本颜色 -->
         <item name="android:textColorPrimaryDisableOnly">@color/hd_textPrimary</item>
 
@@ -40,7 +36,7 @@
         </item>
 
         <!-- windowBackground 窗口背景颜色 -->
-        <item name="android:windowBackground">@color/google_grey50</item>
+        <item name="android:windowBackground">@color/hd_windowBackground</item>
     </style>
 
     <!-- Base activity theme. -->
