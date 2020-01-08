@@ -10,18 +10,18 @@
     <color name="hd_themeSecondaryLight">@color/google_grey400</color>
     <!-- 着重色 -->
     <color name="hd_themeAccent">@color/hd_themePrimary</color>
-    <!-- 底部导航栏颜色 -->
-    <color name="hd_navigationBarColor">@color/google_grey900</color>
-    <!-- 窗口默认色 -->
-    <color name="hd_windowBackground">@color/google_grey50</color>
     <!-- 主要文字颜色 -->
     <color name="hd_textPrimary">@color/google_grey900</color>
     <!-- 次要文字颜色 -->
     <color name="hd_textSecondary">@color/google_grey600</color>
-    <!-- 按钮文字颜色 -->
-    <color name="hd_textWhite">@color/google_grey0</color>
+    <!-- 主题色背景下的文字颜色 -->
+    <color name="hd_textOpposite">@color/google_grey0</color>
     <!-- 分割线颜色 -->
     <color name="hd_divider">@color/google_grey400</color>
+    <!-- 底部导航栏颜色 -->
+    <color name="hd_navigationBarColor">@color/google_grey900</color>
+    <!-- 窗口默认色 -->
+    <color name="hd_windowBackground">@color/google_grey50</color>
 
     <!--==================== Snackbar ====================-->
     <color name="hd_snackbar_messageColor">@color/google_grey50</color>
