@@ -42,8 +42,8 @@ open class FrameActivity<P : BasePresenter> : BaseActivity<P>() {
             init {
                 this.setImageSrc(
                     R.drawable.hd_icon_titlebar_back,
-                    R.color.web_white,
-                    R.color.google_grey300
+                    R.color.hd_titlebar_normal,
+                    R.color.hd_titlebar_press
                 )
             }
 
