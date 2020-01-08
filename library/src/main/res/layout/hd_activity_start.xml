@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rootLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,7 +9,12 @@
         style="@style/HandyFrameTitlebar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:hd_statusbarBackgroundColor="@color/web_transparent"
-        app:hd_titlebarBackground="@color/web_transparent" />
+        android:layout_alignParentTop="true"
+        android:visibility="gone" />
 
-</LinearLayout>
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+</RelativeLayout>
