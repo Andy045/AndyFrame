@@ -17,7 +17,9 @@
     <!-- 主要文字颜色 -->
     <color name="hd_textPrimary">@color/google_grey900</color>
     <!-- 次要文字颜色 -->
-    <color name="hd_textSecondary">@color/google_grey600</color>
+    <color name="hd_textSecondary">@color/google_grey800</color>
+    <!-- 次次要文字颜色 -->
+    <color name="hd_textTertiary">@color/google_grey700</color>
     <!-- 主题色背景下的文字颜色 -->
     <color name="hd_textOpposite">@color/google_grey0</color>
 
