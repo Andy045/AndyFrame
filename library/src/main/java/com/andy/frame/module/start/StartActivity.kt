@@ -16,7 +16,7 @@ import kotlinx.android.synthetic.main.hd_activity_start.*
 /**
  * @title: StartActivity
  * @projectName HandyFrame
- * @description: TODO
+ * @description: 欢迎界面
  * @author LiuJie https://github.com/Handy045
  * @date Created in 2020-01-08 17:20
  */
