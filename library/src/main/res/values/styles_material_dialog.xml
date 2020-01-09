@@ -42,7 +42,6 @@
         <item name="android:layout_gravity">center</item>
         <item name="android:textSize">@dimen/google_font_medium</item>
         <item name="android:textColor">@color/hd_textSecondary</item>
-        <item name="android:layout_marginBottom">@dimen/google_spacing_large</item>
     </style>
 
     <style name="AD_MaterialAlertDialog_MaterialComponents_Button_Normal" parent="Widget.MaterialComponents.Button.TextButton.Dialog.Flush">
