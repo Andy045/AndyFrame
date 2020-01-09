@@ -143,7 +143,6 @@ class MaterialDialogUtil {
             builder.setIcon(R.drawable.hd_anim_materialdialog_progress)
             mDialog = builder.show()
             mDialog?.window?.findViewById<Space>(R.id.spacer)?.visibility = View.GONE
-            mDialog?.window?.findViewById<FrameLayout>(R.id.contentPanel)?.minimumHeight = 0
             mDialog?.setCancelable(backDismiss)
             mDialog?.setCanceledOnTouchOutside(outsideDismiss)
         }
