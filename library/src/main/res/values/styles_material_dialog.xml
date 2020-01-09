@@ -58,25 +58,26 @@
     </style>
 
     <!--==================== Progress ====================-->
-    <style name="AD_MaterialDialogTheme_Progress" parent="AD_MaterialDialogTheme_Normal">
-        <item name="materialAlertDialogTitleIconStyle">
-            @style/AD_MaterialAlertDialog_MaterialComponents_Progress_Icon
-        </item>
+    <style name="AD_MaterialDialogTheme_Progress_Vertical" parent="AD_MaterialDialogTheme_Normal">
         <item name="materialAlertDialogTitlePanelStyle">
-            @style/AD_MaterialAlertDialog_MaterialComponents_Progress_Panel
+            @style/AD_MaterialAlertDialog_MaterialComponents_Progress_Panel_Vertical
+        </item>
+        <item name="materialAlertDialogTitleIconStyle">
+            @style/AD_MaterialAlertDialog_MaterialComponents_Progress_Icon_Vertical
         </item>
         <item name="materialAlertDialogTitleTextStyle">
-            @style/AD_MaterialAlertDialog_MaterialComponents_Progress_Title
+            @style/AD_MaterialAlertDialog_MaterialComponents_Progress_Title_Vertical
         </item>
     </style>
 
-    <style name="AD_MaterialAlertDialog_MaterialComponents_Progress_Panel" parent="MaterialAlertDialog.MaterialComponents.Title.Panel.CenterStacked">
+    <style name="AD_MaterialAlertDialog_MaterialComponents_Progress_Panel_Vertical" parent="MaterialAlertDialog.MaterialComponents.Title.Panel.CenterStacked">
         <item name="android:orientation">vertical</item>
-        <item name="android:paddingTop">@dimen/hd_dp10</item>
-        <item name="android:paddingBottom">@dimen/hd_dp6</item>
+        <item name="android:padding">@dimen/hd_dp0</item>
+        <item name="android:layout_marginTop">@dimen/hd_dp10</item>
+        <item name="android:layout_marginBottom">@dimen/hd_dp8</item>
     </style>
 
-    <style name="AD_MaterialAlertDialog_MaterialComponents_Progress_Icon" parent="MaterialAlertDialog.MaterialComponents.Title.Icon.CenterStacked">
+    <style name="AD_MaterialAlertDialog_MaterialComponents_Progress_Icon_Vertical" parent="MaterialAlertDialog.MaterialComponents.Title.Icon.CenterStacked">
         <item name="android:layout_gravity">center</item>
         <item name="android:layout_width">@dimen/hd_dp32</item>
         <item name="android:layout_height">@dimen/hd_dp32</item>
@@ -84,8 +85,38 @@
         <item name="android:layout_marginBottom">@dimen/hd_dp4</item>
     </style>
 
-    <style name="AD_MaterialAlertDialog_MaterialComponents_Progress_Title" parent="AD_MaterialAlertDialog_MaterialComponents_Normal_Title">
+    <style name="AD_MaterialAlertDialog_MaterialComponents_Progress_Title_Vertical" parent="AD_MaterialAlertDialog_MaterialComponents_Normal_Title">
         <item name="android:textColor">@color/hd_textPrimary</item>
+    </style>
+
+    <style name="AD_MaterialDialogTheme_ProgressHorizontal" parent="AD_MaterialDialogTheme_Normal">
+        <item name="materialAlertDialogTitlePanelStyle">
+            @style/AD_MaterialAlertDialog_MaterialComponents_Progress_Panel_Horizontal
+        </item>
+        <item name="materialAlertDialogTitleIconStyle">
+            @style/AD_MaterialAlertDialog_MaterialComponents_Progress_Icon_Horizontal
+        </item>
+        <item name="materialAlertDialogTitleTextStyle">
+            @style/AD_MaterialAlertDialog_MaterialComponents_Progress_Title_Horizontal
+        </item>
+    </style>
+
+    <style name="AD_MaterialAlertDialog_MaterialComponents_Progress_Panel_Horizontal" parent="MaterialAlertDialog.MaterialComponents.Title.Panel.CenterStacked">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">@dimen/google_spacing_large</item>
+    </style>
+
+    <style name="AD_MaterialAlertDialog_MaterialComponents_Progress_Icon_Horizontal" parent="MaterialAlertDialog.MaterialComponents.Title.Icon.CenterStacked">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">@dimen/hd_dp32</item>
+        <item name="android:layout_height">@dimen/hd_dp32</item>
+    </style>
+
+    <style name="AD_MaterialAlertDialog_MaterialComponents_Progress_Title_Horizontal" parent="AD_MaterialAlertDialog_MaterialComponents_Normal_Title">
+        <item name="android:textColor">@color/hd_textPrimary</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
     </style>
 
     <!--==================== Success ====================-->
