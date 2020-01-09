@@ -2,6 +2,10 @@
 <resources>
 
     <style name="AD_MaterialDialogTheme" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog.Centered">
+        <!--  -->
+    </style>
+
+    <style name="AD_MaterialDialogTheme_Default" parent="AD_MaterialDialogTheme">
         <item name="materialAlertDialogTitleTextStyle">
             @style/AD_MaterialAlertDialog_MaterialComponents_Title_Text
         </item>
@@ -11,6 +15,18 @@
         <item name="buttonBarPositiveButtonStyle">@style/AD_BtnBarPositiveButtonStyle</item>
         <item name="buttonBarNegativeButtonStyle">@style/AD_BtnBarNegativeButtonStyle</item>
         <item name="buttonBarNeutralButtonStyle">@style/AD_BtnBarNeutralButtonStyle</item>
+    </style>
+
+    <style name="AD_MaterialDialogTheme_Success" parent="AD_MaterialDialogTheme_Default">
+
+    </style>
+
+    <style name="AD_MaterialDialogTheme_Error" parent="AD_MaterialDialogTheme_Default">
+
+    </style>
+
+    <style name="AD_MaterialDialogTheme_Warning" parent="AD_MaterialDialogTheme_Default">
+
     </style>
 
     <style name="AD_MaterialAlertDialog_MaterialComponents_Title_Text" parent="MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked">
