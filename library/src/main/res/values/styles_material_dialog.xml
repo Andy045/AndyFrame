@@ -5,7 +5,10 @@
         <!--  -->
     </style>
 
-    <style name="AD_MaterialDialogTheme_Default" parent="AD_MaterialDialogTheme">
+    <style name="AD_MaterialDialogTheme_Normal" parent="AD_MaterialDialogTheme">
+        <item name="materialAlertDialogTitleIconStyle">
+            @style/AD_MaterialAlertDialog_MaterialComponents_Icon
+        </item>
         <item name="materialAlertDialogTitleTextStyle">
             @style/AD_MaterialAlertDialog_MaterialComponents_Title_Text
         </item>
@@ -17,16 +20,29 @@
         <item name="buttonBarNeutralButtonStyle">@style/AD_BtnBarNeutralButtonStyle</item>
     </style>
 
-    <style name="AD_MaterialDialogTheme_Success" parent="AD_MaterialDialogTheme_Default">
+
+    <style name="AD_MaterialDialogTheme_Progress" parent="AD_MaterialDialogTheme_Normal">
 
     </style>
 
-    <style name="AD_MaterialDialogTheme_Error" parent="AD_MaterialDialogTheme_Default">
+
+    <style name="AD_MaterialDialogTheme_Success" parent="AD_MaterialDialogTheme_Normal">
 
     </style>
 
-    <style name="AD_MaterialDialogTheme_Warning" parent="AD_MaterialDialogTheme_Default">
+    <style name="AD_MaterialDialogTheme_Error" parent="AD_MaterialDialogTheme_Normal">
 
+    </style>
+
+    <style name="AD_MaterialDialogTheme_Warning" parent="AD_MaterialDialogTheme_Normal">
+
+    </style>
+
+    <style name="AD_MaterialAlertDialog_MaterialComponents_Icon" parent="MaterialAlertDialog.MaterialComponents.Title.Icon.CenterStacked">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">@dimen/hd_dp132</item>
+        <item name="android:layout_height">@dimen/hd_dp132</item>
+        <item name="android:layout_marginBottom">@dimen/google_spacing_medium</item>
     </style>
 
     <style name="AD_MaterialAlertDialog_MaterialComponents_Title_Text" parent="MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked">
