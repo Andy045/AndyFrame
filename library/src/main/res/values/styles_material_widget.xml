@@ -46,7 +46,7 @@
         <!-- 取消阴影（android:stateListAnimator=@null，app:elevation=0dp，默认：无） -->
     </style>
 
-    <style name="HD_MaterialButton_Default" parent="HD_MaterialButton">
+    <style name="HD_MaterialButton_Normal" parent="HD_MaterialButton">
         <item name="android:minWidth">@dimen/hd_dp88</item>
         <item name="android:minHeight">@dimen/hd_dp48</item>
         <item name="android:paddingLeft">@dimen/hd_dp16</item>
@@ -86,7 +86,7 @@
         <!-- 水波纹颜色（默认：选中时：0.1透明度的?attr/colorControlActivated，未选中时：?attr/colorControlHighlight。若要取消水波纹，设置android:background为透明色即可） -->
     </style>
 
-    <style name="HD_MaterialCheckBox_Default" parent="HD_MaterialCheckBox">
+    <style name="HD_MaterialCheckBox_Normal" parent="HD_MaterialCheckBox">
         <item name="android:minWidth">@dimen/hd_dp23</item>
         <item name="android:minHeight">@dimen/hd_dp23</item>
         <item name="android:paddingEnd">@dimen/hd_dp6</item>
@@ -118,7 +118,7 @@
         <!-- 水波纹颜色（默认：选中时：0.1透明度的?attr/colorControlActivated，未选中时：?attr/colorControlHighlight。若要取消水波纹，设置android:background为透明色即可） -->
     </style>
 
-    <style name="HD_MaterialRadioButton_Default" parent="HD_MaterialRadioButton">
+    <style name="HD_MaterialRadioButton_Normal" parent="HD_MaterialRadioButton">
         <item name="android:minWidth">@dimen/hd_dp23</item>
         <item name="android:minHeight">@dimen/hd_dp23</item>
         <item name="android:paddingEnd">@dimen/hd_dp6</item>
@@ -156,7 +156,7 @@
         <!-- 水波纹颜色（默认：选中时：0.1透明度的?attr/colorControlActivated，未选中时：?attr/colorControlHighlight。若要取消水波纹，设置android:background为透明色即可） -->
     </style>
 
-    <style name="HD_MaterialSwitch_Default" parent="HD_MaterialSwitch">
+    <style name="HD_MaterialSwitch_Normal" parent="HD_MaterialSwitch">
         <item name="android:minWidth">@dimen/hd_dp23</item>
         <item name="android:minHeight">@dimen/hd_dp23</item>
         <item name="switchPadding">@dimen/hd_dp6</item>
