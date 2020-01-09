@@ -6,7 +6,7 @@
     android:orientation="vertical">
 
     <com.andy.titlebar.Titlebar
-        style="@style/HandyFrameTitlebar"
+        style="@style/HD_Titlebar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"

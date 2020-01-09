@@ -8,7 +8,7 @@
 
     <com.andy.titlebar.Titlebar
         android:id="@+id/titlebar"
-        style="@style/HandyFrameTitlebar"
+        style="@style/HD_Titlebar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true" />

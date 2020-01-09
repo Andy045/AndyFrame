@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AD_MaterialDialogTheme" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog.Centered">
+        <item name="materialAlertDialogTitleTextStyle">
+            @style/AD_MaterialAlertDialog_MaterialComponents_Title_Text
+        </item>
+        <item name="materialAlertDialogBodyTextStyle">
+            @style/AD_MaterialAlertDialog_MaterialComponents_Body_Text
+        </item>
+        <item name="buttonBarPositiveButtonStyle">@style/AD_BtnBarPositiveButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/AD_BtnBarNegativeButtonStyle</item>
+        <item name="buttonBarNeutralButtonStyle">@style/AD_BtnBarNeutralButtonStyle</item>
+    </style>
+
+    <style name="AD_MaterialAlertDialog_MaterialComponents_Title_Text" parent="MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked">
+        <item name="android:textSize">@dimen/google_font_medium</item>
+        <item name="android:textColor">@color/hd_themePrimary</item>
+    </style>
+
+    <style name="AD_MaterialAlertDialog_MaterialComponents_Body_Text" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">@dimen/hd_dp36</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/google_font_medium</item>
+        <item name="android:textColor">@color/hd_textPrimary</item>
+    </style>
+
+    <style name="AD_BtnBarPositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog.Flush">
+        <item name="android:textSize">@dimen/google_font_small</item>
+        <item name="android:textColor">@color/hd_themePrimary</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="AD_BtnBarNegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog.Flush">
+        <item name="android:textSize">@dimen/google_font_small</item>
+        <item name="android:textColor">@color/hd_textPrimary</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AD_BtnBarNeutralButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog.Flush">
+        <item name="android:textSize">@dimen/google_font_small</item>
+        <item name="android:textColor">@color/hd_textSecondary</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+</resources>
