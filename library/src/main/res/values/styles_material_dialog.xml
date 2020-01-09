@@ -6,15 +6,29 @@
     </style>
 
     <style name="AD_MaterialDialogTheme_Normal" parent="AD_MaterialDialogTheme">
+        <item name="materialAlertDialogTitlePanelStyle">
+            @style/AD_MaterialAlertDialog_MaterialComponents_Normal_Panel
+        </item>
         <item name="materialAlertDialogTitleTextStyle">
             @style/AD_MaterialAlertDialog_MaterialComponents_Normal_Title
         </item>
         <item name="materialAlertDialogBodyTextStyle">
             @style/AD_MaterialAlertDialog_MaterialComponents_Normal_Body
         </item>
-        <item name="buttonBarPositiveButtonStyle">@style/AD_BtnBarPositiveButtonStyle_Normal</item>
-        <item name="buttonBarNegativeButtonStyle">@style/AD_BtnBarNegativeButtonStyle_Normal</item>
-        <item name="buttonBarNeutralButtonStyle">@style/AD_BtnBarNeutralButtonStyle_Normal</item>
+        <item name="buttonBarPositiveButtonStyle">
+            @style/AD_MaterialAlertDialog_MaterialComponents_Button_Normal
+        </item>
+        <item name="buttonBarNegativeButtonStyle">
+            @style/AD_MaterialAlertDialog_MaterialComponents_Button_Normal
+        </item>
+        <item name="buttonBarNeutralButtonStyle">
+            @style/AD_MaterialAlertDialog_MaterialComponents_Button_Normal
+        </item>
+    </style>
+
+    <style name="AD_MaterialAlertDialog_MaterialComponents_Normal_Panel" parent="MaterialAlertDialog.MaterialComponents.Title.Panel.CenterStacked">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">@dimen/hd_dp18</item>
     </style>
 
     <style name="AD_MaterialAlertDialog_MaterialComponents_Normal_Title" parent="MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked">
@@ -31,31 +45,19 @@
         <item name="android:layout_marginBottom">@dimen/google_spacing_large</item>
     </style>
 
-    <style name="AD_BtnBarPositiveButtonStyle_Normal" parent="Widget.MaterialComponents.Button.TextButton.Dialog.Flush">
+    <style name="AD_MaterialAlertDialog_MaterialComponents_Button_Normal" parent="Widget.MaterialComponents.Button.TextButton.Dialog.Flush">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_weight">1</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:fontFamily">sans-serif</item>
-        <item name="android:textSize">@dimen/google_font_small</item>
-        <item name="android:textColor">@color/hd_themePrimary</item>
-    </style>
-
-    <style name="AD_BtnBarNegativeButtonStyle_Normal" parent="Widget.MaterialComponents.Button.TextButton.Dialog.Flush">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_weight">1</item>
+        <item name="backgroundTint">@color/hd_themePrimary</item>
+        <item name="rippleColor">@color/hd_themePrimaryLight</item>
+        <item name="android:layout_marginLeft">@dimen/hd_dp1</item>
+        <item name="android:layout_marginStart">@dimen/hd_dp1</item>
+        <item name="android:layout_marginRight">@dimen/hd_dp1</item>
+        <item name="android:layout_marginEnd">@dimen/hd_dp1</item>
         <item name="android:textStyle">normal</item>
         <item name="android:fontFamily">sans-serif</item>
         <item name="android:textSize">@dimen/google_font_small</item>
-        <item name="android:textColor">@color/hd_textPrimary</item>
-    </style>
-
-    <style name="AD_BtnBarNeutralButtonStyle_Normal" parent="Widget.MaterialComponents.Button.TextButton.Dialog.Flush">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_weight">1</item>
-        <item name="android:textStyle">normal</item>
-        <item name="android:fontFamily">sans-serif</item>
-        <item name="android:textSize">@dimen/google_font_small</item>
-        <item name="android:textColor">@color/hd_textSecondary</item>
+        <item name="android:textColor">@color/hd_textOpposite</item>
     </style>
 
     <!--==================== Progress ====================-->
@@ -71,8 +73,7 @@
         </item>
     </style>
 
-    <style name="AD_MaterialAlertDialog_MaterialComponents_Progress_Panel" parent="MaterialAlertDialog.MaterialComponents.Title.Panel.CenterStacked">
-        <item name="android:orientation">vertical</item>
+    <style name="AD_MaterialAlertDialog_MaterialComponents_Progress_Panel" parent="AD_MaterialAlertDialog_MaterialComponents_Normal_Panel">
         <item name="android:padding">@dimen/google_spacing_xlarge</item>
     </style>
 
@@ -98,50 +99,40 @@
         <item name="materialAlertDialogTitleTextStyle">
             @style/AD_MaterialAlertDialog_MaterialComponents_Success_Title
         </item>
-        <item name="buttonBarNegativeButtonStyle">@style/AD_BtnBarNegativeButtonStyle_Success</item>
+        <item name="buttonBarNegativeButtonStyle">
+            @style/AD_MaterialAlertDialog_MaterialComponents_Button_Normal
+        </item>
     </style>
 
     <style name="AD_MaterialAlertDialog_MaterialComponents_Success_Title" parent="AD_MaterialAlertDialog_MaterialComponents_Normal_Title">
         <item name="android:textColor">@color/hd_materialdialog_success_title</item>
     </style>
 
-    <style name="AD_BtnBarNegativeButtonStyle_Success" parent="AD_BtnBarNegativeButtonStyle_Normal">
-        <item name="backgroundTint">@color/hd_themePrimary</item>
-        <item name="rippleColor">@color/hd_themePrimaryLight</item>
-        <item name="android:textColor">@color/hd_textOpposite</item>
-    </style>
     <!--==================== Error ====================-->
     <style name="AD_MaterialDialogTheme_Error" parent="AD_MaterialDialogTheme_Normal">
         <item name="materialAlertDialogTitleTextStyle">
             @style/AD_MaterialAlertDialog_MaterialComponents_Error_Title
         </item>
-        <item name="buttonBarNegativeButtonStyle">@style/AD_BtnBarNegativeButtonStyle_Error</item>
+        <item name="buttonBarNegativeButtonStyle">
+            @style/AD_MaterialAlertDialog_MaterialComponents_Button_Normal
+        </item>
     </style>
 
     <style name="AD_MaterialAlertDialog_MaterialComponents_Error_Title" parent="AD_MaterialAlertDialog_MaterialComponents_Normal_Title">
         <item name="android:textColor">@color/hd_materialdialog_error_title</item>
     </style>
 
-    <style name="AD_BtnBarNegativeButtonStyle_Error" parent="AD_BtnBarNegativeButtonStyle_Normal">
-        <item name="backgroundTint">@color/hd_themePrimary</item>
-        <item name="rippleColor">@color/hd_themePrimaryLight</item>
-        <item name="android:textColor">@color/hd_textOpposite</item>
-    </style>
     <!--==================== Warning ====================-->
     <style name="AD_MaterialDialogTheme_Warning" parent="AD_MaterialDialogTheme_Normal">
         <item name="materialAlertDialogTitleTextStyle">
             @style/AD_MaterialAlertDialog_MaterialComponents_Warning_Title
         </item>
-        <item name="buttonBarNegativeButtonStyle">@style/AD_BtnBarNegativeButtonStyle_Warning</item>
+        <item name="buttonBarNegativeButtonStyle">
+            @style/AD_MaterialAlertDialog_MaterialComponents_Button_Normal
+        </item>
     </style>
 
     <style name="AD_MaterialAlertDialog_MaterialComponents_Warning_Title" parent="AD_MaterialAlertDialog_MaterialComponents_Normal_Title">
         <item name="android:textColor">@color/hd_materialdialog_warning_title</item>
-    </style>
-
-    <style name="AD_BtnBarNegativeButtonStyle_Warning" parent="AD_BtnBarNegativeButtonStyle_Normal">
-        <item name="backgroundTint">@color/hd_themePrimary</item>
-        <item name="rippleColor">@color/hd_themePrimaryLight</item>
-        <item name="android:textColor">@color/hd_textOpposite</item>
     </style>
 </resources>
