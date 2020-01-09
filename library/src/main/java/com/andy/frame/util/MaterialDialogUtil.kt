@@ -139,8 +139,8 @@ class MaterialDialogUtil {
             }
 
             val builder = getBuilder(Type.Progress)
+            builder.setTitle(title)
             builder.setIcon(R.drawable.hd_anim_materialdialog_progress)
-            builder.setMessage(title)
             mDialog = builder.show()
             mDialog?.window?.findViewById<Space>(R.id.spacer)?.visibility = View.GONE
             mDialog?.window?.findViewById<FrameLayout>(R.id.contentPanel)?.minimumHeight = 0
@@ -272,7 +272,7 @@ class MaterialDialogUtil {
                 MaterialAlertDialogBuilder(mActivity, R.style.AD_MaterialDialogTheme_Normal)
             }
             Type.Progress -> {
-                MaterialAlertDialogBuilder(mActivity, R.style.AD_MaterialDialogTheme)
+                MaterialAlertDialogBuilder(mActivity, R.style.AD_MaterialDialogTheme_Progress)
             }
             Type.Success -> {
                 MaterialAlertDialogBuilder(mActivity, R.style.AD_MaterialDialogTheme_Success)
