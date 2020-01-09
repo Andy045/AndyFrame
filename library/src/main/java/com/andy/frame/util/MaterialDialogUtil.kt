@@ -180,7 +180,6 @@ class MaterialDialogUtil {
                 .setNegativeButton(cBtnText, cBtnClickListener)
             mDialog = builder.show()
             mDialog?.window?.findViewById<Space>(R.id.spacer)?.visibility = View.GONE
-            mDialog?.window?.findViewById<FrameLayout>(R.id.contentPanel)?.minimumHeight = 0
             mDialog?.setCancelable(backDismiss)
             mDialog?.setCanceledOnTouchOutside(outsideDismiss)
         }
@@ -217,7 +216,6 @@ class MaterialDialogUtil {
                 .setNegativeButton(cBtnText, cBtnClickListener)
             mDialog = builder.show()
             mDialog?.window?.findViewById<Space>(R.id.spacer)?.visibility = View.GONE
-            mDialog?.window?.findViewById<FrameLayout>(R.id.contentPanel)?.minimumHeight = 0
             mDialog?.setCancelable(backDismiss)
             mDialog?.setCanceledOnTouchOutside(outsideDismiss)
         }
@@ -254,7 +252,6 @@ class MaterialDialogUtil {
                 .setNegativeButton(cBtnText, cBtnClickListener)
             mDialog = builder.show()
             mDialog?.window?.findViewById<Space>(R.id.spacer)?.visibility = View.GONE
-            mDialog?.window?.findViewById<FrameLayout>(R.id.contentPanel)?.minimumHeight = 0
             mDialog?.setCancelable(backDismiss)
             mDialog?.setCanceledOnTouchOutside(outsideDismiss)
         }
