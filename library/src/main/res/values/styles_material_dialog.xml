@@ -72,21 +72,24 @@
 
     <style name="AD_MaterialAlertDialog_MaterialComponents_Progress_Panel_Vertical" parent="MaterialAlertDialog.MaterialComponents.Title.Panel.CenterStacked">
         <item name="android:orientation">vertical</item>
-        <item name="android:padding">@dimen/hd_dp0</item>
-        <item name="android:layout_marginTop">@dimen/hd_dp10</item>
-        <item name="android:layout_marginBottom">@dimen/hd_dp8</item>
+        <item name="android:padding">@dimen/google_spacing_large</item>
     </style>
 
     <style name="AD_MaterialAlertDialog_MaterialComponents_Progress_Icon_Vertical" parent="MaterialAlertDialog.MaterialComponents.Title.Icon.CenterStacked">
         <item name="android:layout_gravity">center</item>
-        <item name="android:layout_width">@dimen/hd_dp32</item>
-        <item name="android:layout_height">@dimen/hd_dp32</item>
+        <item name="android:layout_width">@dimen/hd_dp36</item>
+        <item name="android:layout_height">@dimen/hd_dp36</item>
         <item name="android:padding">@dimen/hd_dp0</item>
-        <item name="android:layout_marginBottom">@dimen/hd_dp4</item>
+        <item name="android:layout_marginLeft">@dimen/hd_dp0</item>
+        <item name="android:layout_marginRight">@dimen/hd_dp0</item>
+        <item name="android:layout_marginTop">@dimen/hd_dp2</item>
+        <item name="android:layout_marginBottom">@dimen/google_spacing_medium</item>
     </style>
 
     <style name="AD_MaterialAlertDialog_MaterialComponents_Progress_Title_Vertical" parent="AD_MaterialAlertDialog_MaterialComponents_Normal_Title">
         <item name="android:textColor">@color/hd_textPrimary</item>
+        <item name="android:padding">@dimen/hd_dp0</item>
+        <item name="android:layout_margin">@dimen/hd_dp0</item>
     </style>
 
     <style name="AD_MaterialDialogTheme_ProgressHorizontal" parent="AD_MaterialDialogTheme_Normal">
