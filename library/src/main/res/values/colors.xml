@@ -35,9 +35,15 @@
     <color name="hd_titlebar_press">@color/google_grey400</color>
 
     <!--==================== Snackbar ====================-->
-    <color name="hd_snackbar_messageColor">@color/google_grey50</color>
-    <color name="hd_snackbar_actionColor">@color/google_lightbluea400</color>
+    <color name="hd_snackbar_message">@color/google_grey50</color>
+    <color name="hd_snackbar_action">@color/google_lightbluea400</color>
     <color name="hd_snackbar_background">@color/google_grey800</color>
     <color name="hd_snackbar_background_success">@color/google_green800</color>
     <color name="hd_snackbar_background_error">@color/google_red800</color>
+
+    <!--==================== MaterialDialog ====================-->
+    <color name="hd_materialdialog_success_title">@color/google_green500</color>
+    <color name="hd_materialdialog_error_title">@color/google_red500</color>
+    <color name="hd_materialdialog_warning_title">@color/google_orange500</color>
+
 </resources>
