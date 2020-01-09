@@ -8,7 +8,7 @@ import com.andy.frame.module.start.StartActivity
 /**
  * @title: StartActivity
  * @projectName HandyFrame
- * @description: TODO
+ * @description: 欢迎界面
  * @author LiuJie https://github.com/Handy045
  * @date Created in 2020-01-08 17:31
  */
