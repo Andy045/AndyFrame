@@ -6,6 +6,7 @@ import androidx.annotation.DrawableRes
 import com.andy.basic.mvp.BasePresenter
 import com.andy.frame.R
 import com.andy.frame.base.FrameActivity
+import com.andy.frame.util.MaterialDialogUtil
 import kotlinx.android.synthetic.main.hd_activity_start.*
 
 /**
@@ -33,8 +34,8 @@ abstract class StartActivity : FrameActivity<BasePresenter>() {
         }
     }
 
-    override fun onPermissionSuccessHDB() {
-        super.onPermissionSuccessHDB()
+    override fun onPermissionSuccessHD() {
+        super.onPermissionSuccessHD()
 
         val intent = setIntentTargetActivity()
         if (intent != null) {
@@ -44,6 +45,25 @@ abstract class StartActivity : FrameActivity<BasePresenter>() {
             }
         }
     }
+
+    override fun onPermissionRejectionHD(permissions: Array<String>) {
+        super.onPermissionRejectionHD(permissions)
+        MaterialDialogUtil.instance.showProgress("正在查询，请稍候")
+//        MaterialDialogUtil.instance.showSuccess("AAA", "BBBB", "CCCC", null)
+//        MaterialDialogUtil.instance.showError("AAA", "BBBB", "CCCC", null)
+//        MaterialDialogUtil.instance.showWarning("AAA", "BBBB", "CCCC", null)
+//        MaterialDialogUtil.instance.showNormal(
+//            "AAA",
+//            "BBBB",
+//            "CCCC",
+//            null,
+//            "CCCC",
+//            null,
+//            "CCCC",
+//            null
+//        )
+    }
+
 
     @DrawableRes
     abstract fun setBackgroundImage(): Int?
