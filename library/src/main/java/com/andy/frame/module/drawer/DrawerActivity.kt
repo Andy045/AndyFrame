@@ -1,9 +1,11 @@
 package com.andy.frame.module.drawer
 
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
 import android.widget.FrameLayout
 import android.widget.RelativeLayout
+import androidx.annotation.LayoutRes
 import androidx.drawerlayout.widget.DrawerLayout
 import com.andy.basic.mvp.BasePresenter
 import com.andy.frame.R
@@ -19,9 +21,6 @@ import kotlinx.android.synthetic.main.hd_activity_drawer.*
  * @date Created in 2020-01-10 08:50
  */
 open class DrawerActivity<P : BasePresenter> : FrameActivity<P>() {
-
-    var mDrawerLeft: View? = null
-    var mDrawerRight: View? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,16 +48,20 @@ open class DrawerActivity<P : BasePresenter> : FrameActivity<P>() {
         drawerLayout.closeDrawer(drawerLeft)
     }
 
-    fun setFrameLayoutLeftView(view: View) {
-        mDrawerLeft = view
-        drawerLeft.visibility = View.VISIBLE
-        frameLayoutLeft.addView(view)
+    fun addDrawerLeftView(@LayoutRes viewId: Int) {
+        val view =
+            LayoutInflater.from(mContext).inflate(viewId, null)
+        if (view != null) {
+            addDrawerLeftView(view)
+        }
     }
 
-    fun removeFrameLayoutLeftView() {
-        mDrawerLeft = null
-        drawerLeft.visibility = View.GONE
-        frameLayoutLeft.removeAllViews()
+    fun addDrawerLeftView(view: View) {
+        drawerLeft.addView(view)
+    }
+
+    fun removeDrawerLeftView() {
+        drawerLeft.removeAllViews()
     }
 
     //==================================================
@@ -72,16 +75,20 @@ open class DrawerActivity<P : BasePresenter> : FrameActivity<P>() {
         drawerLayout.closeDrawer(drawerRight)
     }
 
-    fun setFrameLayoutRightView(view: View) {
-        mDrawerRight = view
-        drawerRight.visibility = View.VISIBLE
-        frameLayoutRight.addView(view)
+    fun addDrawerRightView(@LayoutRes viewId: Int) {
+        val view =
+            LayoutInflater.from(mContext).inflate(viewId, null)
+        if (view != null) {
+            addDrawerRightView(view)
+        }
     }
 
-    fun removeFrameLayoutRightView() {
-        mDrawerRight = null
-        drawerRight.visibility = View.GONE
-        frameLayoutRight.removeAllViews()
+    fun addDrawerRightView(view: View) {
+        drawerRight.addView(view)
+    }
+
+    fun removeDrawerRightView() {
+        drawerRight.removeAllViews()
     }
 
     //==================================================
@@ -105,13 +112,5 @@ open class DrawerActivity<P : BasePresenter> : FrameActivity<P>() {
 
     fun getDrawerRight(): RelativeLayout {
         return drawerRight
-    }
-
-    fun getFrameLayoutLeft(): FrameLayout {
-        return frameLayoutLeft
-    }
-
-    fun getFrameLayoutRight(): FrameLayout {
-        return frameLayoutRight
     }
 }
