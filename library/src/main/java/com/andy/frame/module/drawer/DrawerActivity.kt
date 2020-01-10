@@ -3,10 +3,12 @@ package com.andy.frame.module.drawer
 import android.os.Bundle
 import android.view.View
 import android.widget.FrameLayout
+import android.widget.RelativeLayout
 import androidx.drawerlayout.widget.DrawerLayout
 import com.andy.basic.mvp.BasePresenter
 import com.andy.frame.R
 import com.andy.frame.base.FrameActivity
+import com.andy.titlebar.Titlebar
 import kotlinx.android.synthetic.main.hd_activity_drawer.*
 
 /**
@@ -32,10 +34,6 @@ open class DrawerActivity<P : BasePresenter> : FrameActivity<P>() {
     //==================================================
     // Content
     //==================================================
-    fun getFrameLayoutCenter(): FrameLayout {
-        return frameLayoutCenter
-    }
-
     fun setCenterFrameLayout(view: View) {
         frameLayoutCenter.addView(view)
     }
@@ -44,15 +42,11 @@ open class DrawerActivity<P : BasePresenter> : FrameActivity<P>() {
     // DrawerLeft
     //==================================================
     fun openDrawerLeft() {
-        if (drawerLeft != null) {
-            drawerLayout.openDrawer(drawerLeft!!)
-        }
+        drawerLayout.openDrawer(drawerLeft)
     }
 
     fun closeDrawerLeft() {
-        if (drawerLeft != null) {
-            drawerLayout.closeDrawer(drawerLeft!!)
-        }
+        drawerLayout.closeDrawer(drawerLeft)
     }
 
     fun setFrameLayoutLeftView(view: View) {
@@ -73,15 +67,11 @@ open class DrawerActivity<P : BasePresenter> : FrameActivity<P>() {
     // DrawerRight
     //==================================================
     fun openDrawerRight() {
-        if (drawerRight != null) {
-            drawerLayout.openDrawer(drawerRight!!)
-        }
+        drawerLayout.openDrawer(drawerRight)
     }
 
     fun closeDrawerRight() {
-        if (drawerRight != null) {
-            drawerLayout.closeDrawer(drawerRight!!)
-        }
+        drawerLayout.closeDrawer(drawerRight)
     }
 
     fun setFrameLayoutRightView(view: View) {
@@ -96,5 +86,36 @@ open class DrawerActivity<P : BasePresenter> : FrameActivity<P>() {
         drawerRight.visibility = View.GONE
         frameLayoutRight.removeAllViews()
         drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED, drawerRight)
+    }
+
+    //==================================================
+    // OtherWidgets
+    //==================================================
+    fun getTitlebar(): Titlebar {
+        return titlebar
+    }
+
+    fun getDrawerLayout(): DrawerLayout {
+        return drawerLayout
+    }
+
+    fun getFrameLayoutCenter(): FrameLayout {
+        return frameLayoutCenter
+    }
+
+    fun getDrawerLeft(): RelativeLayout {
+        return drawerLeft
+    }
+
+    fun getDrawerRight(): RelativeLayout {
+        return drawerRight
+    }
+
+    fun getFrameLayoutLeft(): FrameLayout {
+        return frameLayoutLeft
+    }
+
+    fun getFrameLayoutRight(): FrameLayout {
+        return frameLayoutRight
     }
 }
