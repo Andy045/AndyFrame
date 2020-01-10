@@ -59,6 +59,7 @@
         <item name="android:insetBottom">@dimen/hd_dp6</item>
         <item name="cornerRadius">@dimen/hd_dp4</item>
         <item name="iconPadding">@dimen/hd_dp8</item>
+        <item name="android:fontFamily">sans-serif</item>
         <item name="android:textSize">@dimen/google_font_medium</item>
         <item name="android:textAllCaps">false</item>
     </style>
