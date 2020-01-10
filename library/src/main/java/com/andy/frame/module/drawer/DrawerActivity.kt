@@ -44,10 +44,12 @@ open class DrawerActivity<P : BasePresenter> : FrameActivity<P>() {
     fun removeLeftDrawerFrameLayoutViews() {
         drawerChildLeft.visibility = View.GONE
         frameLayoutLeft.removeAllViews()
+        drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED, drawerChildLeft)
     }
 
     fun removeRightDrawerFrameLayoutViews() {
         drawerChildRight.visibility = View.GONE
         frameLayoutRight.removeAllViews()
+        drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED, drawerChildRight)
     }
 }
