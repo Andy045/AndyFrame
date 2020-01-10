@@ -34,17 +34,17 @@ open class DrawerActivity<P : BasePresenter> : FrameActivity<P>() {
         super.onCreate(savedInstanceState)
         setContentView(setRootLayoutRes())
 
-        titlebar.addRightAction(object : Action() {
+        titlebar.addLeftAction(object : Action() {
             init {
                 this.setImageSrc(
-                    R.drawable.hd_icon_titlebar_more,
+                    R.drawable.hd_icon_titlebar_menu,
                     R.color.hd_titlebar_normal,
                     R.color.hd_titlebar_press
                 )
             }
 
             override fun onClick() {
-                openDrawerRight()
+                openDrawerLeft()
             }
         })
 
