@@ -87,4 +87,19 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/hd_dp1"
         android:background="@color/hd_divider" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/hd_icon_exitapp"
+        android:drawablePadding="@dimen/google_spacing_medium"
+        android:padding="@dimen/google_spacing_medium"
+        android:text="退出"
+        android:textColor="@color/hd_textOpposite"
+        android:textSize="@dimen/google_font_medium" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hd_dp1"
+        android:background="@color/hd_divider" />
 </LinearLayout>
