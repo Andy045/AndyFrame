@@ -24,7 +24,7 @@
     <color name="hd_textOpposite">@color/google_grey0</color>
 
     <!-- 分割线颜色 -->
-    <color name="hd_divider">@color/google_grey400</color>
+    <color name="hd_divider">@color/google_grey300</color>
 
     <!-- 底部导航栏颜色 -->
     <color name="hd_navigationBarColor">@color/google_grey900</color>
