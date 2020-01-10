@@ -28,14 +28,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:background="@color/hd_themePrimaryDark"
-        android:orientation="vertical">
-
-        <FrameLayout
-            android:id="@+id/frameLayoutLeft"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-    </RelativeLayout>
+        android:orientation="vertical" />
 
     <RelativeLayout
         android:id="@+id/drawerRight"
@@ -43,12 +36,5 @@
         android:layout_height="match_parent"
         android:layout_gravity="end"
         android:background="@color/hd_themePrimaryDark"
-        android:orientation="vertical">
-
-        <FrameLayout
-            android:id="@+id/frameLayoutRight"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-    </RelativeLayout>
+        android:orientation="vertical" />
 </androidx.drawerlayout.widget.DrawerLayout>
