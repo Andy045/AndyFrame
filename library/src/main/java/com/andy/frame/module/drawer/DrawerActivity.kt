@@ -63,14 +63,12 @@ open class DrawerActivity<P : BasePresenter> : FrameActivity<P>() {
         mDrawerLeft = view
         drawerLeft.visibility = View.VISIBLE
         frameLayoutLeft.addView(view)
-        drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED, drawerLeft)
     }
 
     fun removeFrameLayoutLeftView() {
         mDrawerLeft = null
         drawerLeft.visibility = View.GONE
         frameLayoutLeft.removeAllViews()
-        drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED, drawerLeft)
     }
 
     //==================================================
@@ -96,14 +94,12 @@ open class DrawerActivity<P : BasePresenter> : FrameActivity<P>() {
         mDrawerRight = view
         drawerRight.visibility = View.VISIBLE
         frameLayoutRight.addView(view)
-        drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED, drawerRight)
     }
 
     fun removeFrameLayoutRightView() {
         mDrawerRight = null
         drawerRight.visibility = View.GONE
         frameLayoutRight.removeAllViews()
-        drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED, drawerRight)
     }
 
     //==================================================
