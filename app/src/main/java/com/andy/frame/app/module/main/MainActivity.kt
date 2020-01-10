@@ -1,9 +1,10 @@
 package com.andy.frame.app.module.main
 
 import android.os.Bundle
+import android.view.LayoutInflater
 import com.andy.basic.mvp.BasePresenter
+import com.andy.frame.app.R
 import com.andy.frame.module.drawer.DrawerActivity
-import com.andy.titlebar.entity.Action
 
 /**
  * @title: StartActivity
@@ -16,16 +17,14 @@ class MainActivity : DrawerActivity<BasePresenter>() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        initTitlebar(getTitlebar(), "首页")
+        getTitlebar().setTitleText("首页")
+    }
 
-        getTitlebar().addRightAction(object : Action() {
-            init {
-                this.setText("OPEN")
-            }
+    override fun initViewHD(savedInstanceState: Bundle?) {
+        super.initViewHD(savedInstanceState)
 
-            override fun onClick() {
-                openDrawerRight()
-            }
-        })
+        val view =
+            LayoutInflater.from(mContext).inflate(R.layout.hd_include_main_drawer_right, null)
+        addDrawerLeftView(view)
     }
 }
