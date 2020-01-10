@@ -1,9 +1,11 @@
 package com.andy.frame.module.drawer
 
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
 import android.widget.FrameLayout
 import android.widget.RelativeLayout
+import androidx.annotation.LayoutRes
 import androidx.drawerlayout.widget.DrawerLayout
 import com.andy.basic.mvp.BasePresenter
 import com.andy.frame.R
@@ -49,6 +51,14 @@ open class DrawerActivity<P : BasePresenter> : FrameActivity<P>() {
         drawerLayout.closeDrawer(drawerLeft)
     }
 
+    fun setFrameLayoutLeftView(@LayoutRes viewId: Int) {
+        val view =
+            LayoutInflater.from(mContext).inflate(viewId, null)
+        if (view != null) {
+            setFrameLayoutLeftView(view)
+        }
+    }
+
     fun setFrameLayoutLeftView(view: View) {
         mDrawerLeft = view
         drawerLeft.visibility = View.VISIBLE
@@ -72,6 +82,14 @@ open class DrawerActivity<P : BasePresenter> : FrameActivity<P>() {
 
     fun closeDrawerRight() {
         drawerLayout.closeDrawer(drawerRight)
+    }
+
+    fun setFrameLayoutRightView(@LayoutRes viewId: Int) {
+        val view =
+            LayoutInflater.from(mContext).inflate(viewId, null)
+        if (view != null) {
+            setFrameLayoutRightView(view)
+        }
     }
 
     fun setFrameLayoutRightView(view: View) {
