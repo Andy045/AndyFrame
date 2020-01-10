@@ -11,6 +11,7 @@ import com.andy.basic.mvp.BasePresenter
 import com.andy.frame.R
 import com.andy.frame.base.FrameActivity
 import com.andy.titlebar.Titlebar
+import com.andy.titlebar.entity.Action
 import kotlinx.android.synthetic.main.hd_activity_drawer.*
 
 /**
@@ -25,6 +26,20 @@ open class DrawerActivity<P : BasePresenter> : FrameActivity<P>() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.hd_activity_drawer)
+
+        titlebar.addRightAction(object : Action() {
+            init {
+                this.setImageSrc(
+                    R.drawable.hd_icon_titlebar_more,
+                    R.color.hd_titlebar_normal,
+                    R.color.hd_titlebar_press
+                )
+            }
+
+            override fun onClick() {
+                openDrawerRight()
+            }
+        })
 
         drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED, drawerLeft)
         drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED, drawerRight)
