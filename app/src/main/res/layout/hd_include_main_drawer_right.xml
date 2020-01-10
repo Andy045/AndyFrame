@@ -14,6 +14,7 @@
         android:paddingBottom="@dimen/google_spacing_large">
 
         <ImageView
+            android:id="@+id/imgAvatar"
             android:layout_width="@dimen/hd_dp58"
             android:layout_height="@dimen/hd_dp58"
             android:layout_gravity="center_horizontal"
@@ -40,6 +41,7 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/tvGithub"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableStart="@drawable/hd_icon_github"
@@ -56,6 +58,7 @@
         android:background="@color/hd_divider" />
 
     <TextView
+        android:id="@+id/tvWebSite"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableStart="@drawable/hd_icon_website"
@@ -72,6 +75,7 @@
         android:background="@color/hd_divider" />
 
     <TextView
+        android:id="@+id/tvSetting"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableStart="@drawable/hd_icon_setting"
@@ -88,6 +92,7 @@
         android:background="@color/hd_divider" />
 
     <TextView
+        android:id="@+id/tvExitApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableStart="@drawable/hd_icon_exitapp"
