@@ -30,7 +30,7 @@
         <!-- 图标颜色（app:iconTint，默认：?attr/colorOnPrimary） -->
         <!-- 图标大小（app:iconSize，默认：无） -->
         <!-- 图标位置（app:iconGravity，默认：无） -->
-        <!-- 图标内间距（app:iconPadding，默认：无） -->
+        <!-- 图标内间距（app:iconPadding，默认：8dp） -->
 
         <!-- 边框颜色（app:strokeColor，默认：?attr/colorOnSurface） -->
         <!-- 边框大小（app:strokeWidth，默认：无） -->
@@ -58,6 +58,7 @@
         <item name="android:insetTop">@dimen/hd_dp6</item>
         <item name="android:insetBottom">@dimen/hd_dp6</item>
         <item name="cornerRadius">@dimen/hd_dp4</item>
+        <item name="iconPadding">@dimen/hd_dp8</item>
         <item name="android:textSize">@dimen/google_font_medium</item>
         <item name="android:textAllCaps">false</item>
     </style>
