@@ -3,6 +3,7 @@ package com.andy.frame.module.drawer
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.widget.FrameLayout
 import android.widget.RelativeLayout
 import androidx.annotation.LayoutRes
@@ -72,6 +73,10 @@ open class DrawerActivity<P : BasePresenter> : FrameActivity<P>() {
     }
 
     fun addDrawerLeftView(view: View) {
+        view.layoutParams = ViewGroup.LayoutParams(
+            ViewGroup.LayoutParams.MATCH_PARENT,
+            ViewGroup.LayoutParams.MATCH_PARENT
+        )
         drawerLeft.addView(view)
     }
 
@@ -99,6 +104,10 @@ open class DrawerActivity<P : BasePresenter> : FrameActivity<P>() {
     }
 
     fun addDrawerRightView(view: View) {
+        view.layoutParams = ViewGroup.LayoutParams(
+            ViewGroup.LayoutParams.MATCH_PARENT,
+            ViewGroup.LayoutParams.MATCH_PARENT
+        )
         drawerRight.addView(view)
     }
 
