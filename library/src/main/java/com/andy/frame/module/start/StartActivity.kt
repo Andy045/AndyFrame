@@ -20,7 +20,7 @@ import kotlinx.android.synthetic.main.hd_activity_start.*
  * @author LiuJie https://github.com/Handy045
  * @date Created in 2020-01-08 17:20
  */
-abstract class StartActivity : FrameActivity<BasePresenter>() {
+abstract class StartActivity<P : BasePresenter> : FrameActivity<P>() {
 
     init {
         this.isCheckPermissions = true
