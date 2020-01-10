@@ -45,7 +45,7 @@
         android:drawableStart="@drawable/hd_icon_github"
         android:drawableEnd="@drawable/hd_icon_more"
         android:drawablePadding="@dimen/google_spacing_medium"
-        android:padding="@dimen/google_spacing_medium"
+        android:padding="@dimen/google_spacing_large"
         android:text="Github"
         android:textColor="@color/hd_textOpposite"
         android:textSize="@dimen/google_font_medium" />
@@ -61,7 +61,7 @@
         android:drawableStart="@drawable/hd_icon_website"
         android:drawableEnd="@drawable/hd_icon_more"
         android:drawablePadding="@dimen/google_spacing_medium"
-        android:padding="@dimen/google_spacing_medium"
+        android:padding="@dimen/google_spacing_large"
         android:text="个人网址"
         android:textColor="@color/hd_textOpposite"
         android:textSize="@dimen/google_font_medium" />
@@ -77,7 +77,7 @@
         android:drawableStart="@drawable/hd_icon_setting"
         android:drawableEnd="@drawable/hd_icon_more"
         android:drawablePadding="@dimen/google_spacing_medium"
-        android:padding="@dimen/google_spacing_medium"
+        android:padding="@dimen/google_spacing_large"
         android:text="设置"
         android:textColor="@color/hd_textOpposite"
         android:textSize="@dimen/google_font_medium" />
@@ -92,7 +92,7 @@
         android:layout_height="wrap_content"
         android:drawableStart="@drawable/hd_icon_exitapp"
         android:drawablePadding="@dimen/google_spacing_medium"
-        android:padding="@dimen/google_spacing_medium"
+        android:padding="@dimen/google_spacing_large"
         android:text="退出"
         android:textColor="@color/hd_textOpposite"
         android:textSize="@dimen/google_font_medium" />
