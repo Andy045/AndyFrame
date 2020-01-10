@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/hd_dp240"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    android:background="@color/hd_themePrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/hd_themePrimaryDark"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/google_spacing_large"
+        android:paddingBottom="@dimen/google_spacing_large">
+
+        <ImageView
+            android:layout_width="@dimen/hd_dp58"
+            android:layout_height="@dimen/hd_dp58"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/google_spacing_xxlarge"
+            android:src="@drawable/hd_icon_person" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/google_spacing_medium"
+            android:gravity="center"
+            android:text="Andy"
+            android:textColor="@color/hd_textOpposite"
+            android:textSize="@dimen/google_font_medium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/google_spacing_small"
+            android:gravity="center"
+            android:text="liujie045.china@outlook.com"
+            android:textColor="@color/hd_textOpposite"
+            android:textSize="@dimen/google_font_medium" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/hd_icon_github"
+        android:drawableEnd="@drawable/hd_icon_more"
+        android:drawablePadding="@dimen/google_spacing_medium"
+        android:padding="@dimen/google_spacing_medium"
+        android:text="Github"
+        android:textColor="@color/hd_textOpposite"
+        android:textSize="@dimen/google_font_medium" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hd_dp1"
+        android:background="@color/hd_divider" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/hd_icon_website"
+        android:drawableEnd="@drawable/hd_icon_more"
+        android:drawablePadding="@dimen/google_spacing_medium"
+        android:padding="@dimen/google_spacing_medium"
+        android:text="个人网址"
+        android:textColor="@color/hd_textOpposite"
+        android:textSize="@dimen/google_font_medium" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hd_dp1"
+        android:background="@color/hd_divider" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/hd_icon_setting"
+        android:drawableEnd="@drawable/hd_icon_more"
+        android:drawablePadding="@dimen/google_spacing_medium"
+        android:padding="@dimen/google_spacing_medium"
+        android:text="设置"
+        android:textColor="@color/hd_textOpposite"
+        android:textSize="@dimen/google_font_medium" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hd_dp1"
+        android:background="@color/hd_divider" />
+</LinearLayout>
