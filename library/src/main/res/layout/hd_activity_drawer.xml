@@ -30,7 +30,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:background="@color/hd_themePrimary"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:visibility="gone">
 
         <FrameLayout
             android:id="@+id/frameLayoutLeft"
@@ -45,7 +46,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="end"
         android:background="@color/hd_themePrimary"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:visibility="gone">
 
         <FrameLayout
             android:id="@+id/frameLayoutRight"
