@@ -34,7 +34,7 @@
 
     <!--==================== Titlebar ====================-->
     <color name="hd_titlebar_normal">@color/google_grey0</color>
-    <color name="hd_titlebar_press">@color/google_grey400</color>
+    <color name="hd_titlebar_press">@color/google_grey300</color>
 
     <!--==================== Snackbar ====================-->
     <color name="hd_snackbar_message">@color/google_grey50</color>
