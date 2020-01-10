@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.provider.Settings
 import androidx.annotation.DrawableRes
+import androidx.annotation.LayoutRes
 import com.andy.basic.mvp.BasePresenter
 import com.andy.frame.R
 import com.andy.frame.base.FrameActivity
@@ -50,10 +51,15 @@ abstract class StartActivity<P : BasePresenter> : FrameActivity<P>() {
         }
     }
 
+    @LayoutRes
+    fun setRootLayoutRes(): Int {
+        return R.layout.hd_activity_start
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.hd_activity_start)
+        setContentView(setRootLayoutRes())
 
         val resId = setBackgroundImage()
         if (resId != null) {

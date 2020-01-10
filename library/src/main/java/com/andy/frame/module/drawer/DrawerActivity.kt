@@ -25,9 +25,14 @@ import kotlinx.android.synthetic.main.hd_activity_drawer.*
  */
 open class DrawerActivity<P : BasePresenter> : FrameActivity<P>() {
 
+    @LayoutRes
+    fun setRootLayoutRes(): Int {
+        return R.layout.hd_activity_drawer
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.hd_activity_drawer)
+        setContentView(setRootLayoutRes())
 
         titlebar.addRightAction(object : Action() {
             init {
