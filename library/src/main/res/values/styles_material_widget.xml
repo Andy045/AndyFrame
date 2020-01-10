@@ -62,6 +62,13 @@
         <item name="android:textAllCaps">false</item>
     </style>
 
+    <style name="HD_MaterialButton_Unelevated" parent="HD_MaterialButton_Normal">
+        <item name="android:insetTop">@dimen/hd_dp0</item>
+        <item name="android:insetBottom">@dimen/hd_dp0</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="elevation">@dimen/hd_dp0</item>
+    </style>
+
     <style name="HD_MaterialCheckBox" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
         <!-- 最小宽度（android:minWidth，默认：48dp） -->
         <!-- 最小高度（android:minHeight，默认：48dp） -->
