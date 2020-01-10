@@ -25,10 +25,22 @@ open class DrawerActivity<P : BasePresenter> : FrameActivity<P>() {
     }
 
     fun setLeftDrawerFrameLayout(view: View) {
+        drawerChildLeft.visibility = View.VISIBLE
         frameLayoutLeft.addView(view)
     }
 
     fun setRightDrawerFrameLayout(view: View) {
+        drawerChildRight.visibility = View.VISIBLE
         frameLayoutRight.addView(view)
+    }
+
+    fun removeLeftDrawerFrameLayoutViews() {
+        drawerChildLeft.visibility = View.GONE
+        frameLayoutLeft.removeAllViews()
+    }
+
+    fun removeRightDrawerFrameLayoutViews() {
+        drawerChildRight.visibility = View.GONE
+        frameLayoutRight.removeAllViews()
     }
 }
