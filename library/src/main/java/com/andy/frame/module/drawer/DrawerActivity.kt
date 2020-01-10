@@ -2,6 +2,7 @@ package com.andy.frame.module.drawer
 
 import android.os.Bundle
 import android.view.View
+import androidx.drawerlayout.widget.DrawerLayout
 import com.andy.basic.mvp.BasePresenter
 import com.andy.frame.R
 import com.andy.frame.base.FrameActivity
@@ -17,7 +18,11 @@ import kotlinx.android.synthetic.main.hd_activity_drawer.*
 open class DrawerActivity<P : BasePresenter> : FrameActivity<P>() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.hd_activity_drawer)
+
+        drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED, drawerChildLeft)
+        drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED, drawerChildRight)
     }
 
     fun setCenterFrameLayout(view: View) {
@@ -25,13 +30,15 @@ open class DrawerActivity<P : BasePresenter> : FrameActivity<P>() {
     }
 
     fun setLeftDrawerFrameLayout(view: View) {
-        drawerChildLeft.visibility = View.VISIBLE
         frameLayoutLeft.addView(view)
+        drawerChildLeft.visibility = View.VISIBLE
+        drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED, drawerChildLeft)
     }
 
     fun setRightDrawerFrameLayout(view: View) {
-        drawerChildRight.visibility = View.VISIBLE
         frameLayoutRight.addView(view)
+        drawerChildRight.visibility = View.VISIBLE
+        drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED, drawerChildRight)
     }
 
     fun removeLeftDrawerFrameLayoutViews() {
