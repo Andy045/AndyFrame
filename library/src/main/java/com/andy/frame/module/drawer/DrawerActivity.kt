@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
 import android.widget.RelativeLayout
+import androidx.annotation.ColorInt
 import androidx.annotation.LayoutRes
 import androidx.drawerlayout.widget.DrawerLayout
 import com.andy.basic.mvp.BasePresenter
@@ -118,6 +119,13 @@ open class DrawerActivity<P : BasePresenter> : FrameActivity<P>() {
     //==================================================
     // OtherWidgets
     //==================================================
+    /**
+     * 设置侧边栏展开时的背景颜色（默认：0x99000000）
+     */
+    fun setDrawerScrimColor(@ColorInt color: Int) {
+        drawerLayout.setScrimColor(color)
+    }
+
     fun getTitlebar(): Titlebar {
         return titlebar
     }
