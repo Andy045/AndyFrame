@@ -1,54 +1,6 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
 
-    <!-- Base application theme. -->
-    <style name="HD_AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <!-- 应用的主要色调，Toolbar默认颜色，Button默认颜色 -->
-        <item name="colorPrimary">@color/hd_themePrimary</item>
-        <!-- 应用的主要暗色调，statusBarColor默认颜色 -->
-        <item name="colorPrimaryDark">@color/hd_themePrimaryDark</item>
-
-        <!-- 控件的水波纹颜色 -->
-        <item name="colorControlHighlight">@color/hd_themeSecondaryLight</item>
-
-        <!-- CheckBox RadioButton Switch的选中颜色 -->
-        <item name="colorAccent">@color/hd_themePrimary</item>
-        <!-- CheckBox RadioButton Switch的选中颜色 (使用Material主题时，替代colorAccent) -->
-        <item name="colorControlActivated">@color/hd_themePrimary</item>
-
-        <!-- Button的文本颜色 -->
-        <item name="colorOnPrimary">@color/hd_textOpposite</item>
-        <!-- EditText的文本颜色 -->
-        <item name="android:textColorPrimary">@color/hd_textPrimary</item>
-        <!-- ChexkBox RadioButton Switch的文本颜色 -->
-        <item name="android:textColorPrimaryDisableOnly">@color/hd_textPrimary</item>
-
-        <!-- EditText的下划线颜色 (不使用Material主题时，CheckBox RadioButton的边框颜色) -->
-        <item name="colorControlNormal">@color/hd_themeSecondary</item>
-
-        <!-- statusBarColor 状态栏颜色，默认使用colorPrimaryDark -->
-        <item name="android:statusBarColor" tools:targetApi="lollipop">
-            @color/hd_themePrimaryDark
-        </item>
-
-        <!-- android:navigationBarColor 底部栏颜色 -->
-        <item name="android:navigationBarColor" tools:targetApi="lollipop">
-            @color/hd_navigationBarColor
-        </item>
-
-        <!-- windowBackground 窗口背景颜色 -->
-        <item name="android:windowBackground">@color/hd_windowBackground</item>
-    </style>
-
-    <!-- Base activity theme. -->
-    <style name="HD_ActivityTheme" parent="HD_AppTheme">
-        <item name="android:configChanges">orientation|keyboardHidden|screenSize</item>
-        <item name="android:exported">false</item>
-        <item name="android:launchMode">standard</item>
-        <item name="android:screenOrientation">portrait</item>
-        <item name="android:windowSoftInputMode">adjustPan|stateAlwaysHidden</item>
-    </style>
-
-    <style name="HD_Titlebar" parent="HandyTitlebarTheme">
+    <style name="Widget.HandyFrame.Titlebar" parent="HandyTitlebarTheme">
         <item name="hd_isTranslucentStatus">true</item>
         <item name="hd_statusbarBackgroundColor">@color/hd_themePrimaryDark</item>
         <item name="hd_titlebarBackground">@color/hd_themePrimary</item>
