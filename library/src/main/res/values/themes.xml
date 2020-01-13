@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.HandyFrame.App" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- 主题色 -->
+        <item name="colorPrimary">@color/google_lightblue500</item>
+        <!-- 主题色暗色调 -->
+        <item name="colorPrimaryDark">@color/google_lightblue700</item>
+        <!--主题色变种色调，同暗色调 -->
+        <item name="colorPrimaryVariant">@color/google_lightblue700</item>
+        <!-- 主题色对比色调，也是主题色上的文本颜色 -->
+        <item name="colorOnPrimary">@color/google_grey0</item>
+
+        <!-- 辅助色 -->
+        <item name="colorSecondary">@color/google_lightgreen500</item>
+        <!--辅助色变种色调 -->
+        <item name="colorSecondaryVariant">@color/google_lightgreen700</item>
+        <!-- 辅助色对比色调，也是辅助色上的文本颜色 -->
+        <item name="colorOnSecondary">@color/google_lightgreen700</item>
+
+        <!-- CheckBox RadioButton Switch的选中颜色 -->
+        <item name="colorAccent">@color/google_deeporange500</item>
+
+        <!-- 错误提示 -->
+        <item name="colorError">@color/google_red500</item>
+    </style>
+
+    <style name="Theme.HandyFrame.App.Activity">
+        <item name="android:configChanges">orientation|keyboardHidden|screenSize</item>
+        <item name="android:exported">false</item>
+        <item name="android:launchMode">standard</item>
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowSoftInputMode">adjustPan|stateAlwaysHidden</item>
+    </style>
+</resources>
