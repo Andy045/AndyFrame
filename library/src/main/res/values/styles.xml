@@ -7,5 +7,8 @@
         <item name="hd_bottomLineHeight">@dimen/hd_dp0</item>
         <item name="android:focusable">true</item>
         <item name="android:focusableInTouchMode">true</item>
+        <item name="hd_mainTextColor">?attr/colorOnPrimary</item>
+        <item name="hd_subTextColor">?attr/colorOnPrimary</item>
+        <item name="hd_actionTextColor">?attr/colorOnPrimary</item>
     </style>
 </resources>
