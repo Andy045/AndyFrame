@@ -8,7 +8,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/hd_themePrimaryDark"
         android:orientation="vertical"
         android:paddingTop="@dimen/google_spacing_large"
         android:paddingBottom="@dimen/google_spacing_large">
@@ -52,12 +51,8 @@
         android:paddingLeft="@dimen/hd_dp8"
         android:paddingEnd="@dimen/hd_dp8"
         android:paddingRight="@dimen/hd_dp8"
-        android:text="Github" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/hd_dp1"
-        android:background="@color/hd_divider" />
+        android:text="Github"
+        android:textSize="@dimen/google_font_small" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/tvWebSite"
@@ -71,12 +66,8 @@
         android:paddingLeft="@dimen/hd_dp8"
         android:paddingEnd="@dimen/hd_dp8"
         android:paddingRight="@dimen/hd_dp8"
-        android:text="个人网址" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/hd_dp1"
-        android:background="@color/hd_divider" />
+        android:text="个人网址"
+        android:textSize="@dimen/google_font_small" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/tvSetting"
@@ -90,12 +81,8 @@
         android:paddingLeft="@dimen/hd_dp8"
         android:paddingEnd="@dimen/hd_dp8"
         android:paddingRight="@dimen/hd_dp8"
-        android:text="设置" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/hd_dp1"
-        android:background="@color/hd_divider" />
+        android:text="设置"
+        android:textSize="@dimen/google_font_small" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/tvExitApp"
@@ -109,10 +96,6 @@
         android:paddingLeft="@dimen/hd_dp8"
         android:paddingEnd="@dimen/hd_dp8"
         android:paddingRight="@dimen/hd_dp8"
-        android:text="退出" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/hd_dp1"
-        android:background="@color/hd_divider" />
+        android:text="退出"
+        android:textSize="@dimen/google_font_small" />
 </LinearLayout>
