@@ -44,6 +44,7 @@
         style="@style/HD_MaterialButton_Unelevated"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/google_spacing_medium"
         android:drawableLeft="@drawable/hd_icon_github"
         android:drawableRight="@drawable/hd_icon_more"
         android:gravity="start|center_vertical"
@@ -98,4 +99,17 @@
         android:paddingRight="@dimen/hd_dp8"
         android:text="退出"
         android:textSize="@dimen/google_font_small" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="@dimen/hd_dp24"
+        android:layout_height="@dimen/hd_dp24"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/google_spacing_xxlarge"
+        android:src="@drawable/hd_icon_close" />
 </LinearLayout>

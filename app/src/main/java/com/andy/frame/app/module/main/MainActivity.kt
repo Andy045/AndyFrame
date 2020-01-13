@@ -42,5 +42,6 @@ class MainActivity : DrawerActivity<BasePresenter>() {
         }
         tvSetting.setOnClickListener { }
         tvExitApp.setOnClickListener { finish() }
+        ivClose.setOnClickListener { getDrawerLayout().closeDrawer(getDrawerLeft()) }
     }
 }
