@@ -265,19 +265,34 @@ class MaterialDialogUtil {
     fun getBuilder(type: Type): MaterialAlertDialogBuilder {
         return when (type) {
             Type.Normal -> {
-                MaterialAlertDialogBuilder(mActivity, R.style.AD_MaterialDialogTheme_Normal)
+                MaterialAlertDialogBuilder(
+                    mActivity,
+                    R.style.Theme_HandyFrame_MaterialDialog_Normal_Centered
+                )
             }
             Type.Progress -> {
-                MaterialAlertDialogBuilder(mActivity, R.style.AD_MaterialDialogTheme_Progress)
+                MaterialAlertDialogBuilder(
+                    mActivity,
+                    R.style.Theme_HandyFrame_MaterialDialog_Progress_Centered
+                )
             }
             Type.Success -> {
-                MaterialAlertDialogBuilder(mActivity, R.style.AD_MaterialDialogTheme_Success)
+                MaterialAlertDialogBuilder(
+                    mActivity,
+                    R.style.Theme_HandyFrame_MaterialDialog_Success_Centered
+                )
             }
             Type.Error -> {
-                MaterialAlertDialogBuilder(mActivity, R.style.AD_MaterialDialogTheme_Error)
+                MaterialAlertDialogBuilder(
+                    mActivity,
+                    R.style.Theme_HandyFrame_MaterialDialog_Error_Centered
+                )
             }
             Type.Warning -> {
-                MaterialAlertDialogBuilder(mActivity, R.style.AD_MaterialDialogTheme_Warning)
+                MaterialAlertDialogBuilder(
+                    mActivity,
+                    R.style.Theme_HandyFrame_MaterialDialog_Warning_Centered
+                )
             }
         }
     }
