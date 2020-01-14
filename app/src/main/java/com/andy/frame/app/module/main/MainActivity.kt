@@ -6,7 +6,7 @@ import android.os.Bundle
 import com.andy.basic.mvp.BasePresenter
 import com.andy.frame.app.R
 import com.andy.frame.module.drawer.DrawerActivity
-import kotlinx.android.synthetic.main.hd_include_main_drawer_right.*
+import kotlinx.android.synthetic.main.hd_include_main_drawer_left.*
 
 /**
  * @title: StartActivity
@@ -26,7 +26,7 @@ class MainActivity : DrawerActivity<BasePresenter>() {
     override fun initViewHD(savedInstanceState: Bundle?) {
         super.initViewHD(savedInstanceState)
 
-        addDrawerLeftView(R.layout.hd_include_main_drawer_right)
+        addDrawerLeftView(R.layout.hd_include_main_drawer_left)
 
         tvGithub.setOnClickListener {
             val uri = Uri.parse("https://github.com/Andy045")
