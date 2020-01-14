@@ -13,8 +13,8 @@
 
         <gradient
             android:centerY="0.50"
-            android:endColor="?attr/colorPrimaryDark"
-            android:startColor="?attr/colorPrimary"
+            android:endColor="?attr/colorPrimary"
+            android:startColor="?attr/colorSecondary"
             android:type="linear"
             android:useLevel="false" />
     </shape>
