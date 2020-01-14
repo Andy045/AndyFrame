@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="HD_MaterialButton" parent="Widget.MaterialComponents.Button">
+    <style name="Widget.HandyFrame.Material.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:minWidth">@dimen/hd_dp88</item>
+        <item name="android:minHeight">@dimen/hd_dp48</item>
+        <item name="android:paddingLeft">@dimen/hd_dp16</item>
+        <item name="android:paddingRight">@dimen/hd_dp16</item>
+        <item name="android:paddingStart">@dimen/hd_dp16</item>
+        <item name="android:paddingEnd">@dimen/hd_dp16</item>
+        <item name="android:paddingTop">@dimen/hd_dp4</item>
+        <item name="android:paddingBottom">@dimen/hd_dp4</item>
+        <item name="android:insetTop">@dimen/hd_dp6</item>
+        <item name="android:insetBottom">@dimen/hd_dp6</item>
+        <item name="cornerRadius">@dimen/hd_dp4</item>
+        <item name="iconPadding">@dimen/hd_dp8</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">@dimen/google_font_medium</item>
+        <item name="android:textAllCaps">false</item>
+
         <!-- 主题扩展：Widget.MaterialComponents.Button -->
         <!-- 主题扩展：Widget.MaterialComponents.Button.TextButton -->
         <!-- 主题扩展：Widget.MaterialComponents.Button.OutlinedButton -->
@@ -46,32 +62,20 @@
         <!-- 取消阴影（android:stateListAnimator=@null，app:elevation=0dp，默认：无） -->
     </style>
 
-    <style name="HD_MaterialButton_Normal" parent="HD_MaterialButton">
-        <item name="android:minWidth">@dimen/hd_dp88</item>
-        <item name="android:minHeight">@dimen/hd_dp48</item>
-        <item name="android:paddingLeft">@dimen/hd_dp16</item>
-        <item name="android:paddingRight">@dimen/hd_dp16</item>
-        <item name="android:paddingStart">@dimen/hd_dp16</item>
-        <item name="android:paddingEnd">@dimen/hd_dp16</item>
-        <item name="android:paddingTop">@dimen/hd_dp4</item>
-        <item name="android:paddingBottom">@dimen/hd_dp4</item>
-        <item name="android:insetTop">@dimen/hd_dp6</item>
-        <item name="android:insetBottom">@dimen/hd_dp6</item>
-        <item name="cornerRadius">@dimen/hd_dp4</item>
-        <item name="iconPadding">@dimen/hd_dp8</item>
-        <item name="android:fontFamily">sans-serif</item>
-        <item name="android:textSize">@dimen/google_font_medium</item>
-        <item name="android:textAllCaps">false</item>
-    </style>
-
-    <style name="HD_MaterialButton_Unelevated" parent="HD_MaterialButton_Normal">
+    <style name="Widget.HandyFrame.Material.Button.Unelevated">
         <item name="android:insetTop">@dimen/hd_dp0</item>
         <item name="android:insetBottom">@dimen/hd_dp0</item>
         <item name="android:stateListAnimator">@null</item>
         <item name="elevation">@dimen/hd_dp0</item>
     </style>
 
-    <style name="HD_MaterialCheckBox" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
+    <style name="Widget.HandyFrame.Material.CheckBox" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="android:minWidth">@dimen/hd_dp23</item>
+        <item name="android:minHeight">@dimen/hd_dp23</item>
+        <item name="android:paddingEnd">@dimen/hd_dp6</item>
+        <item name="android:paddingRight">@dimen/hd_dp6</item>
+        <item name="android:textSize">@dimen/hd_sp14</item>
+
         <!-- 最小宽度（android:minWidth，默认：48dp） -->
         <!-- 最小高度（android:minHeight，默认：48dp） -->
 
@@ -95,15 +99,13 @@
         <!-- 水波纹颜色（默认：选中时：0.1透明度的?attr/colorControlActivated，未选中时：?attr/colorControlHighlight。若要取消水波纹，设置android:background为透明色即可） -->
     </style>
 
-    <style name="HD_MaterialCheckBox_Normal" parent="HD_MaterialCheckBox">
+    <style name="Widget.HandyFrame.Material.RadioButton" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
         <item name="android:minWidth">@dimen/hd_dp23</item>
         <item name="android:minHeight">@dimen/hd_dp23</item>
         <item name="android:paddingEnd">@dimen/hd_dp6</item>
         <item name="android:paddingRight">@dimen/hd_dp6</item>
         <item name="android:textSize">@dimen/hd_sp14</item>
-    </style>
 
-    <style name="HD_MaterialRadioButton" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
         <!-- 最小宽度（android:minWidth，默认：48dp） -->
         <!-- 最小高度（android:minHeight，默认：48dp） -->
 
@@ -127,15 +129,14 @@
         <!-- 水波纹颜色（默认：选中时：0.1透明度的?attr/colorControlActivated，未选中时：?attr/colorControlHighlight。若要取消水波纹，设置android:background为透明色即可） -->
     </style>
 
-    <style name="HD_MaterialRadioButton_Normal" parent="HD_MaterialRadioButton">
+    <style name="Widget.HandyFrame.Material.Switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
         <item name="android:minWidth">@dimen/hd_dp23</item>
         <item name="android:minHeight">@dimen/hd_dp23</item>
-        <item name="android:paddingEnd">@dimen/hd_dp6</item>
-        <item name="android:paddingRight">@dimen/hd_dp6</item>
+        <item name="switchPadding">@dimen/hd_dp6</item>
+        <item name="android:padding">@dimen/hd_dp6</item>
+        <item name="android:layoutDirection">rtl</item>
         <item name="android:textSize">@dimen/hd_sp14</item>
-    </style>
 
-    <style name="HD_MaterialSwitch" parent="Widget.MaterialComponents.CompoundButton.Switch">
         <!-- 最小宽度（android:minWidth，默认：48dp） -->
         <!-- 最小高度（android:minHeight，默认：48dp） -->
 
@@ -163,14 +164,5 @@
         <!-- 英文强制大写（android:textAllCaps，默认：false） -->
 
         <!-- 水波纹颜色（默认：选中时：0.1透明度的?attr/colorControlActivated，未选中时：?attr/colorControlHighlight。若要取消水波纹，设置android:background为透明色即可） -->
-    </style>
-
-    <style name="HD_MaterialSwitch_Normal" parent="HD_MaterialSwitch">
-        <item name="android:minWidth">@dimen/hd_dp23</item>
-        <item name="android:minHeight">@dimen/hd_dp23</item>
-        <item name="switchPadding">@dimen/hd_dp6</item>
-        <item name="android:padding">@dimen/hd_dp6</item>
-        <item name="android:layoutDirection">rtl</item>
-        <item name="android:textSize">@dimen/hd_sp14</item>
     </style>
 </resources>
