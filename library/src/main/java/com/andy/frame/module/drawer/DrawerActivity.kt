@@ -70,20 +70,24 @@ open class DrawerActivity<P : BasePresenter> : FrameActivity<P>() {
         drawerLayout.closeDrawer(drawerLeft)
     }
 
-    fun addDrawerLeftView(@LayoutRes viewId: Int) {
+    fun addDrawerLeftView(@LayoutRes viewId: Int, locked: Boolean = true) {
         val view =
             LayoutInflater.from(mContext).inflate(viewId, null)
         if (view != null) {
-            addDrawerLeftView(view)
+            addDrawerLeftView(view, locked)
         }
     }
 
-    fun addDrawerLeftView(view: View) {
+    fun addDrawerLeftView(view: View, locked: Boolean = true) {
         view.layoutParams = ViewGroup.LayoutParams(
             ViewGroup.LayoutParams.MATCH_PARENT,
             ViewGroup.LayoutParams.MATCH_PARENT
         )
         drawerLeft.addView(view)
+        drawerLayout.setDrawerLockMode(
+            if (locked) DrawerLayout.LOCK_MODE_LOCKED_CLOSED else DrawerLayout.LOCK_MODE_UNLOCKED,
+            drawerLeft
+        )
     }
 
     fun removeDrawerLeftView() {
@@ -101,20 +105,24 @@ open class DrawerActivity<P : BasePresenter> : FrameActivity<P>() {
         drawerLayout.closeDrawer(drawerRight)
     }
 
-    fun addDrawerRightView(@LayoutRes viewId: Int) {
+    fun addDrawerRightView(@LayoutRes viewId: Int, locked: Boolean = true) {
         val view =
             LayoutInflater.from(mContext).inflate(viewId, null)
         if (view != null) {
-            addDrawerRightView(view)
+            addDrawerRightView(view, locked)
         }
     }
 
-    fun addDrawerRightView(view: View) {
+    fun addDrawerRightView(view: View, locked: Boolean = true) {
         view.layoutParams = ViewGroup.LayoutParams(
             ViewGroup.LayoutParams.MATCH_PARENT,
             ViewGroup.LayoutParams.MATCH_PARENT
         )
         drawerRight.addView(view)
+        drawerLayout.setDrawerLockMode(
+            if (locked) DrawerLayout.LOCK_MODE_LOCKED_CLOSED else DrawerLayout.LOCK_MODE_UNLOCKED,
+            drawerRight
+        )
     }
 
     fun removeDrawerRightView() {
