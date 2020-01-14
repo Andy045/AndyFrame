@@ -1,6 +1,6 @@
 <resources>
 
-    <style name="Widget.HandyFrame.Titlebar" parent="HandyTitlebarTheme">
+    <style name="Widget.HandyFrame.Titlebar" parent="Widget.HandyTitlebar">
         <item name="hd_isTranslucentStatus">true</item>
         <item name="hd_statusbarBackgroundColor">?attr/colorPrimaryDark</item>
         <item name="hd_titlebarBackground">?attr/colorPrimary</item>
