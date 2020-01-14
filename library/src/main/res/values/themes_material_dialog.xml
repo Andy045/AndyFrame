@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.HandyFrame.MaterialDialog.Normal" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog.Centered">
+    <style name="Theme.HandyFrame.MaterialDialog.Normal.Centered" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog.Centered">
         <item name="materialAlertDialogTitlePanelStyle">
-            @style/Theme.HandyFrame.MaterialDialog.Normal.Panel
+            @style/Theme.HandyFrame.MaterialDialog.Normal.Centered.Panel
         </item>
         <item name="materialAlertDialogTitleTextStyle">
-            @style/Theme.HandyFrame.MaterialDialog.Normal.Title
+            @style/Theme.HandyFrame.MaterialDialog.Normal.Centered.Title
         </item>
         <item name="materialAlertDialogBodyTextStyle">
-            @style/Theme.HandyFrame.MaterialDialog.Normal.Body
+            @style/Theme.HandyFrame.MaterialDialog.Normal.Centered.Body
         </item>
         <item name="buttonBarPositiveButtonStyle">
-            @style/Theme.HandyFrame.MaterialDialog.Normal.Button.Positive
+            @style/Theme.HandyFrame.MaterialDialog.Normal.Centered.Button.Positive
         </item>
         <item name="buttonBarNegativeButtonStyle">
-            @style/Theme.HandyFrame.MaterialDialog.Normal.Button.Negative
+            @style/Theme.HandyFrame.MaterialDialog.Normal.Centered.Button.Negative
         </item>
         <item name="buttonBarNeutralButtonStyle">
-            @style/Theme.HandyFrame.MaterialDialog.Normal.Button.Neutral
+            @style/Theme.HandyFrame.MaterialDialog.Normal.Centered.Button.Neutral
         </item>
     </style>
 
-    <style name="Theme.HandyFrame.MaterialDialog.Normal.Panel" parent="MaterialAlertDialog.MaterialComponents.Title.Panel.CenterStacked">
+    <style name="Theme.HandyFrame.MaterialDialog.Normal.Centered.Panel" parent="MaterialAlertDialog.MaterialComponents.Title.Panel.CenterStacked">
         <item name="android:orientation">vertical</item>
         <item name="android:paddingTop">@dimen/hd_dp18</item>
     </style>
 
-    <style name="Theme.HandyFrame.MaterialDialog.Normal.Title" parent="MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked">
+    <style name="Theme.HandyFrame.MaterialDialog.Normal.Centered.Title" parent="MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked">
         <item name="android:textSize">@dimen/google_font_slarge</item>
         <item name="android:textColor">@color/google_grey900</item>
     </style>
 
-    <style name="Theme.HandyFrame.MaterialDialog.Normal.Body" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+    <style name="Theme.HandyFrame.MaterialDialog.Normal.Centered.Body" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
         <item name="android:gravity">center</item>
         <item name="android:minHeight">@dimen/hd_dp38</item>
         <item name="android:layout_gravity">center</item>
@@ -40,7 +40,7 @@
         <item name="android:textColor">@color/google_grey800</item>
     </style>
 
-    <style name="Theme.HandyFrame.MaterialDialog.Normal.Button" parent="Widget.MaterialComponents.Button.TextButton.Dialog.Flush">
+    <style name="Theme.HandyFrame.MaterialDialog.Normal.Centered.Button" parent="Widget.MaterialComponents.Button.TextButton.Dialog.Flush">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_weight">1</item>
         <item name="android:textStyle">bold</item>
@@ -49,38 +49,38 @@
         <item name="android:textColor">?attr/colorPrimaryDark</item>
     </style>
 
-    <style name="Theme.HandyFrame.MaterialDialog.Normal.Button.Positive" parent="Theme.HandyFrame.MaterialDialog.Normal.Button">
+    <style name="Theme.HandyFrame.MaterialDialog.Normal.Centered.Button.Positive">
         <item name="android:layout_marginLeft">@dimen/hd_dp1</item>
         <item name="android:layout_marginStart">@dimen/hd_dp1</item>
     </style>
 
-    <style name="Theme.HandyFrame.MaterialDialog.Normal.Button.Negative" parent="Theme.HandyFrame.MaterialDialog.Normal.Button">
+    <style name="Theme.HandyFrame.MaterialDialog.Normal.Centered.Button.Negative">
         <item name="android:layout_marginLeft">@dimen/hd_dp1</item>
         <item name="android:layout_marginStart">@dimen/hd_dp1</item>
         <item name="android:layout_marginRight">@dimen/hd_dp1</item>
         <item name="android:layout_marginEnd">@dimen/hd_dp1</item>
     </style>
 
-    <style name="Theme.HandyFrame.MaterialDialog.Normal.Button.Neutral" parent="Theme.HandyFrame.MaterialDialog.Normal.Button">
+    <style name="Theme.HandyFrame.MaterialDialog.Normal.Centered.Button.Neutral">
         <item name="android:layout_marginRight">@dimen/hd_dp1</item>
         <item name="android:layout_marginEnd">@dimen/hd_dp1</item>
     </style>
 
     <!--==================== Progress ====================-->
-    <style name="Theme.HandyFrame.MaterialDialog.Progress" parent="Theme.HandyFrame.MaterialDialog.Normal">
+    <style name="Theme.HandyFrame.MaterialDialog.Progress.Centered" parent="Theme.HandyFrame.MaterialDialog.Normal.Centered">
         <item name="materialAlertDialogTitlePanelStyle">
-            @style/Theme.HandyFrame.MaterialDialog.Progress.Panel
+            @style/Theme.HandyFrame.MaterialDialog.Progress.Centered.Panel
         </item>
         <item name="materialAlertDialogTitleIconStyle">
-            @style/Theme.HandyFrame.MaterialDialog.Progress.Icon
+            @style/Theme.HandyFrame.MaterialDialog.Progress.Centered.Icon
         </item>
     </style>
 
-    <style name="Theme.HandyFrame.MaterialDialog.Progress.Panel" parent="Theme.HandyFrame.MaterialDialog.Normal.Panel">
+    <style name="Theme.HandyFrame.MaterialDialog.Progress.Centered.Panel" parent="Theme.HandyFrame.MaterialDialog.Normal.Centered.Panel">
         <item name="android:padding">@dimen/google_spacing_large</item>
     </style>
 
-    <style name="Theme.HandyFrame.MaterialDialog.Progress.Icon" parent="MaterialAlertDialog.MaterialComponents.Title.Icon.CenterStacked">
+    <style name="Theme.HandyFrame.MaterialDialog.Progress.Centered.Icon" parent="MaterialAlertDialog.MaterialComponents.Title.Icon.CenterStacked">
         <item name="android:layout_gravity">center</item>
         <item name="android:layout_width">@dimen/hd_dp32</item>
         <item name="android:layout_height">@dimen/hd_dp32</item>
@@ -92,44 +92,44 @@
     </style>
 
     <!--==================== Success ====================-->
-    <style name="Theme.HandyFrame.MaterialDialog.Success" parent="Theme.HandyFrame.MaterialDialog.Normal">
+    <style name="Theme.HandyFrame.MaterialDialog.Success.Centered" parent="Theme.HandyFrame.MaterialDialog.Normal.Centered">
         <item name="materialAlertDialogTitleTextStyle">
-            @style/Theme.HandyFrame.MaterialDialog.Success.Title
+            @style/Theme.HandyFrame.MaterialDialog.Success.Centered.Title
         </item>
         <item name="buttonBarNegativeButtonStyle">
-            @style/Theme.HandyFrame.MaterialDialog.Normal.Button
+            @style/Theme.HandyFrame.MaterialDialog.Normal.Centered.Button
         </item>
     </style>
 
-    <style name="Theme.HandyFrame.MaterialDialog.Success.Title" parent="Theme.HandyFrame.MaterialDialog.Normal.Title">
+    <style name="Theme.HandyFrame.MaterialDialog.Success.Centered.Title" parent="Theme.HandyFrame.MaterialDialog.Normal.Centered.Title">
         <item name="android:textColor">@color/google_green500</item>
     </style>
 
     <!--==================== Error ====================-->
-    <style name="Theme.HandyFrame.MaterialDialog.Error" parent="Theme.HandyFrame.MaterialDialog.Normal">
+    <style name="Theme.HandyFrame.MaterialDialog.Error.Centered" parent="Theme.HandyFrame.MaterialDialog.Normal.Centered">
         <item name="materialAlertDialogTitleTextStyle">
-            @style/Theme.HandyFrame.MaterialDialog.Error.Title
+            @style/Theme.HandyFrame.MaterialDialog.Error.Centered.Title
         </item>
         <item name="buttonBarNegativeButtonStyle">
-            @style/Theme.HandyFrame.MaterialDialog.Normal.Button
+            @style/Theme.HandyFrame.MaterialDialog.Normal.Centered.Button
         </item>
     </style>
 
-    <style name="Theme.HandyFrame.MaterialDialog.Error.Title" parent="Theme.HandyFrame.MaterialDialog.Normal.Title">
+    <style name="Theme.HandyFrame.MaterialDialog.Error.Centered.Title" parent="Theme.HandyFrame.MaterialDialog.Normal.Centered.Title">
         <item name="android:textColor">@color/google_red500</item>
     </style>
 
     <!--==================== Warning ====================-->
-    <style name="Theme.HandyFrame.MaterialDialog.Warning" parent="Theme.HandyFrame.MaterialDialog.Normal">
+    <style name="Theme.HandyFrame.MaterialDialog.Warning.Centered" parent="Theme.HandyFrame.MaterialDialog.Normal.Centered">
         <item name="materialAlertDialogTitleTextStyle">
-            @style/Theme.HandyFrame.MaterialDialog.Warning.Title
+            @style/Theme.HandyFrame.MaterialDialog.Warning.Centered.Title
         </item>
         <item name="buttonBarNegativeButtonStyle">
-            @style/Theme.HandyFrame.MaterialDialog.Normal.Button
+            @style/Theme.HandyFrame.MaterialDialog.Normal.Centered.Button
         </item>
     </style>
 
-    <style name="Theme.HandyFrame.MaterialDialog.Warning.Title" parent="Theme.HandyFrame.MaterialDialog.Normal.Title">
+    <style name="Theme.HandyFrame.MaterialDialog.Warning.Centered.Title" parent="Theme.HandyFrame.MaterialDialog.Normal.Centered.Title">
         <item name="android:textColor">@color/google_orange500</item>
     </style>
 </resources>
