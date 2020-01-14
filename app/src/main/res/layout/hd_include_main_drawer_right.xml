@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="@dimen/hd_dp240"
     android:layout_height="match_parent"
-    android:background="@color/hd_themePrimary"
+    android:background="?attr/colorPrimaryDark"
     android:orientation="vertical">
 
     <LinearLayout
@@ -26,7 +26,7 @@
             android:layout_marginTop="@dimen/google_spacing_medium"
             android:gravity="center"
             android:text="Andy"
-            android:textColor="@color/hd_textOpposite"
+            android:textColor="?attr/colorOnPrimary"
             android:textSize="@dimen/google_font_medium" />
 
         <TextView
@@ -35,70 +35,51 @@
             android:layout_marginTop="@dimen/google_spacing_small"
             android:gravity="center"
             android:text="liujie045.china@outlook.com"
-            android:textColor="@color/hd_textOpposite"
+            android:textColor="?attr/colorOnPrimary"
             android:textSize="@dimen/google_font_medium" />
     </LinearLayout>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/tvGithub"
-        style="@style/HD_MaterialButton_Unelevated"
+        style="@style/Widget.HandyFrame.Material.Button.Unelevated"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/google_spacing_medium"
         android:drawableLeft="@drawable/hd_icon_github"
         android:drawableRight="@drawable/hd_icon_more"
         android:gravity="start|center_vertical"
-        android:paddingStart="@dimen/hd_dp8"
-        android:paddingLeft="@dimen/hd_dp8"
-        android:paddingEnd="@dimen/hd_dp8"
-        android:paddingRight="@dimen/hd_dp8"
-        android:text="Github"
-        android:textSize="@dimen/google_font_small" />
+        android:text="Github" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/tvWebSite"
-        style="@style/HD_MaterialButton_Unelevated"
+        style="@style/Widget.HandyFrame.Material.Button.Unelevated"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/hd_icon_website"
         android:drawableRight="@drawable/hd_icon_more"
         android:gravity="start|center_vertical"
-        android:paddingStart="@dimen/hd_dp8"
-        android:paddingLeft="@dimen/hd_dp8"
-        android:paddingEnd="@dimen/hd_dp8"
-        android:paddingRight="@dimen/hd_dp8"
-        android:text="个人网址"
-        android:textSize="@dimen/google_font_small" />
+        android:text="个人网址" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/tvSetting"
-        style="@style/HD_MaterialButton_Unelevated"
+        style="@style/Widget.HandyFrame.Material.Button.Unelevated"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/hd_icon_setting"
         android:drawableRight="@drawable/hd_icon_more"
         android:gravity="start|center_vertical"
-        android:paddingStart="@dimen/hd_dp8"
-        android:paddingLeft="@dimen/hd_dp8"
-        android:paddingEnd="@dimen/hd_dp8"
-        android:paddingRight="@dimen/hd_dp8"
         android:text="设置"
         android:textSize="@dimen/google_font_small" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/tvExitApp"
-        style="@style/HD_MaterialButton_Unelevated"
+        style="@style/Widget.HandyFrame.Material.Button.Unelevated"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/hd_icon_exitapp"
         android:drawableRight="@drawable/hd_icon_more"
         android:gravity="start|center_vertical"
-        android:paddingStart="@dimen/hd_dp8"
-        android:paddingLeft="@dimen/hd_dp8"
-        android:paddingEnd="@dimen/hd_dp8"
-        android:paddingRight="@dimen/hd_dp8"
-        android:text="退出"
-        android:textSize="@dimen/google_font_small" />
+        android:text="退出" />
 
     <Space
         android:layout_width="match_parent"
