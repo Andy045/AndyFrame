@@ -85,7 +85,7 @@
             android:layout_marginStart="@dimen/google_spacing_xxlarge"
             android:layout_marginEnd="@dimen/google_spacing_xxlarge"
             android:buttonTint="@color/hd_selector_login_chk"
-            android:text="记住密码"
+            android:text="@string/hd_login_remember"
             android:textColor="@color/hd_selector_login_chk"
             android:textSize="@dimen/google_font_small" />
 
@@ -100,7 +100,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/google_spacing_small"
             android:padding="@dimen/google_font_small"
-            android:text="登  录"
+            android:text="@string/hd_login"
             android:textSize="@dimen/google_font_medium" />
     </LinearLayout>
 </RelativeLayout>
