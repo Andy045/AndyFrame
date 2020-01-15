@@ -23,7 +23,7 @@ import kotlinx.android.synthetic.main.hd_activity_drawer.*
  * @author LiuJie https://github.com/Handy045
  * @date Created in 2020-01-10 08:50
  */
-open class DrawerActivity<P : BasePresenter> : FrameActivity<P>() {
+abstract class BaseDrawerActivity<P : BasePresenter> : FrameActivity<P>() {
 
     @LayoutRes
     fun setRootLayoutRes(): Int {
