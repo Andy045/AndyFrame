@@ -121,6 +121,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLogin"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/google_spacing_small"
@@ -128,6 +129,8 @@
             android:layout_marginBottom="@dimen/google_spacing_least"
             android:padding="@dimen/google_font_small"
             android:text="@string/hd_login"
-            android:textSize="@dimen/google_font_medium" />
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="@dimen/google_font_medium"
+            app:strokeColor="?attr/colorOnPrimary" />
     </LinearLayout>
 </RelativeLayout>
