@@ -39,11 +39,25 @@
             android:layout_height="0dp"
             android:layout_weight="1" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/google_spacing_xxlarge"
+            android:layout_marginTop="@dimen/google_spacing_xxlarge"
+            android:layout_marginEnd="@dimen/google_spacing_xxlarge"
+            android:paddingStart="@dimen/google_spacing_least"
+            android:paddingLeft="@dimen/google_spacing_least"
+            android:text="@string/hd_login_hint_account"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="@dimen/google_font_small" />
+
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/google_spacing_xxlarge"
+            android:layout_marginStart="@dimen/google_spacing_xxlarge"
+            android:layout_marginEnd="@dimen/google_spacing_xxlarge"
+            android:layout_marginBottom="@dimen/google_spacing_xxlarge"
             app:boxBackgroundColor="@color/hd_selector_login_edt_bg"
             app:endIconMode="clear_text"
             app:endIconTint="@color/google_grey600"
@@ -56,6 +70,17 @@
                 android:imeOptions="actionNext"
                 android:singleLine="true" />
         </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/google_spacing_xxlarge"
+            android:layout_marginEnd="@dimen/google_spacing_xxlarge"
+            android:paddingStart="@dimen/google_spacing_least"
+            android:paddingLeft="@dimen/google_spacing_least"
+            android:text="@string/hd_login_hint_password"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="@dimen/google_font_small" />
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -98,7 +123,9 @@
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/google_spacing_small"
+            android:layout_marginLeft="@dimen/google_spacing_small"
+            android:layout_marginRight="@dimen/google_spacing_small"
+            android:layout_marginBottom="@dimen/google_spacing_least"
             android:padding="@dimen/google_font_small"
             android:text="@string/hd_login"
             android:textSize="@dimen/google_font_medium" />

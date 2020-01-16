@@ -16,5 +16,5 @@
 
 <selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" tools:ignore="NewApi">
     <item android:id="@+id/checked" android:color="?attr/colorAccent" android:state_checked="true" />
-    <item android:id="@+id/unchecked" android:color="@color/google_grey300" />
+    <item android:id="@+id/unchecked" android:color="?attr/colorOnPrimary" />
 </selector>
