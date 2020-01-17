@@ -5,7 +5,7 @@ import android.net.Uri
 import android.os.Bundle
 import com.andy.basic.mvp.BasePresenter
 import com.andy.frame.app.R
-import com.andy.frame.module.drawer.DrawerActivity
+import com.andy.frame.module.drawer.BaseDrawerActivity
 import kotlinx.android.synthetic.main.hd_include_main_drawer_left.*
 
 /**
@@ -15,12 +15,12 @@ import kotlinx.android.synthetic.main.hd_include_main_drawer_left.*
  * @author LiuJie https://github.com/Handy045
  * @date Created in 2020-01-08 17:31
  */
-class MainActivity : DrawerActivity<BasePresenter>() {
+class MainActivity : BaseDrawerActivity<BasePresenter>() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        getTitlebar().setTitleText("首页")
+        titlebar.setTitleText("首页")
     }
 
     override fun initViewHD(savedInstanceState: Bundle?) {
@@ -42,6 +42,6 @@ class MainActivity : DrawerActivity<BasePresenter>() {
         }
         tvSetting.setOnClickListener { }
         tvExitApp.setOnClickListener { finish() }
-        ivClose.setOnClickListener { getDrawerLayout().closeDrawer(getDrawerLeft()) }
+        ivClose.setOnClickListener { drawerLayout.closeDrawer(drawerLeft) }
     }
 }
