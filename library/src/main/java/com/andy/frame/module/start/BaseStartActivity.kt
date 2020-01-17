@@ -6,13 +6,13 @@ import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
 import android.provider.Settings
+import android.widget.ImageView
 import androidx.annotation.DrawableRes
 import androidx.annotation.LayoutRes
 import com.andy.basic.mvp.BasePresenter
 import com.andy.frame.R
 import com.andy.frame.base.FrameActivity
 import com.andy.frame.util.MaterialDialogUtil
-import kotlinx.android.synthetic.main.hd_activity_start.*
 
 /**
  * @title: StartActivity
@@ -27,7 +27,7 @@ abstract class BaseStartActivity<P : BasePresenter> : FrameActivity<P>() {
         this.isCheckPermissions = true
     }
 
-    private val permissionsRequestCode = 100
+    lateinit var image: ImageView
 
     /**
      * 跳转倒计时，默认1秒后执行跳转
@@ -51,6 +51,8 @@ abstract class BaseStartActivity<P : BasePresenter> : FrameActivity<P>() {
         }
     }
 
+    private val permissionsRequestCode = 100
+
     @LayoutRes
     fun setRootLayoutRes(): Int {
         return R.layout.hd_activity_start
@@ -58,8 +60,9 @@ abstract class BaseStartActivity<P : BasePresenter> : FrameActivity<P>() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContentView(setRootLayoutRes())
+
+        image = findViewById(R.id.image)
 
         val resId = setBackgroundImage()
         if (resId != null) {
