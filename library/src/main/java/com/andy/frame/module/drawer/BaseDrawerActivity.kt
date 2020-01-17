@@ -14,7 +14,6 @@ import com.andy.frame.R
 import com.andy.frame.base.FrameActivity
 import com.andy.titlebar.Titlebar
 import com.andy.titlebar.entity.Action
-import kotlinx.android.synthetic.main.hd_activity_drawer.*
 
 /**
  * @title: DrawerActivity
@@ -25,6 +24,12 @@ import kotlinx.android.synthetic.main.hd_activity_drawer.*
  */
 abstract class BaseDrawerActivity<P : BasePresenter> : FrameActivity<P>() {
 
+    lateinit var drawerLayout: DrawerLayout
+    lateinit var titlebar: Titlebar
+    lateinit var frameLayoutCenter: FrameLayout
+    lateinit var drawerLeft: RelativeLayout
+    lateinit var drawerRight: RelativeLayout
+
     @LayoutRes
     fun setRootLayoutRes(): Int {
         return R.layout.hd_activity_drawer
@@ -33,6 +38,12 @@ abstract class BaseDrawerActivity<P : BasePresenter> : FrameActivity<P>() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(setRootLayoutRes())
+
+        drawerLayout = findViewById(R.id.drawerLayout)
+        titlebar = findViewById(R.id.titlebar)
+        frameLayoutCenter = findViewById(R.id.frameLayoutCenter)
+        drawerLeft = findViewById(R.id.drawerLeft)
+        drawerRight = findViewById(R.id.drawerRight)
 
         titlebar.addLeftAction(object : Action() {
             init {
@@ -90,7 +101,7 @@ abstract class BaseDrawerActivity<P : BasePresenter> : FrameActivity<P>() {
         )
     }
 
-    fun removeDrawerLeftView() {
+    fun removeDrawerLeftViews() {
         drawerLeft.removeAllViews()
     }
 
@@ -125,7 +136,7 @@ abstract class BaseDrawerActivity<P : BasePresenter> : FrameActivity<P>() {
         )
     }
 
-    fun removeDrawerRightView() {
+    fun removeDrawerRightViews() {
         drawerRight.removeAllViews()
     }
 
@@ -137,25 +148,5 @@ abstract class BaseDrawerActivity<P : BasePresenter> : FrameActivity<P>() {
      */
     fun setDrawerScrimColor(@ColorInt color: Int) {
         drawerLayout.setScrimColor(color)
-    }
-
-    fun getTitlebar(): Titlebar {
-        return titlebar
-    }
-
-    fun getDrawerLayout(): DrawerLayout {
-        return drawerLayout
-    }
-
-    fun getFrameLayoutCenter(): FrameLayout {
-        return frameLayoutCenter
-    }
-
-    fun getDrawerLeft(): RelativeLayout {
-        return drawerLeft
-    }
-
-    fun getDrawerRight(): RelativeLayout {
-        return drawerRight
     }
 }
