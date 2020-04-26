@@ -3,7 +3,6 @@ package com.andy.frame.app.module.start
 import android.content.Intent
 import com.andy.basic.mvp.BasePresenter
 import com.andy.frame.app.R
-import com.andy.frame.app.module.login.LoginActivity
 import com.andy.frame.module.start.BaseStartActivity
 
 /**
@@ -20,6 +19,6 @@ class StartActivity : BaseStartActivity<BasePresenter>() {
     }
 
     override fun setIntentTargetActivity(): Intent? {
-        return Intent(this, LoginActivity::class.java)
+        return null
     }
 }
