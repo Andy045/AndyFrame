@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--  App ThemeColor  -->
+    <color name="colorPrimary">@color/google_lightblue500</color>
+    <color name="colorPrimaryDark">@color/google_lightblue700</color>
+    <color name="colorPrimaryVariant">@color/google_lightblue700</color>
+    <color name="colorOnPrimary">@color/google_grey0</color>
+    <color name="colorSecondary">@color/google_lightgreen500</color>
+    <color name="colorSecondaryVariant">@color/google_lightgreen700</color>
+    <color name="colorOnSecondary">@color/google_lightgreen700</color>
+    <color name="colorAccent">@color/google_deeporange500</color>
+    <color name="colorError">@color/google_red500</color>
 
 </resources>
