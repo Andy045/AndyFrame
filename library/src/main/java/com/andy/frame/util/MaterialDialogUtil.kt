@@ -2,6 +2,7 @@ package com.andy.frame.util
 
 import android.app.Activity
 import android.app.Application
+import android.content.Context
 import android.content.DialogInterface
 import android.os.Bundle
 import android.view.View
@@ -266,31 +267,31 @@ class MaterialDialogUtil {
         return when (type) {
             Type.Normal -> {
                 MaterialAlertDialogBuilder(
-                    mActivity,
+                    mActivity as Context,
                     R.style.Theme_HandyFrame_MaterialDialog_Normal_Centered
                 )
             }
             Type.Progress -> {
                 MaterialAlertDialogBuilder(
-                    mActivity,
+                    mActivity as Context,
                     R.style.Theme_HandyFrame_MaterialDialog_Progress_Centered
                 )
             }
             Type.Success -> {
                 MaterialAlertDialogBuilder(
-                    mActivity,
+                    mActivity as Context,
                     R.style.Theme_HandyFrame_MaterialDialog_Success_Centered
                 )
             }
             Type.Error -> {
                 MaterialAlertDialogBuilder(
-                    mActivity,
+                    mActivity as Context,
                     R.style.Theme_HandyFrame_MaterialDialog_Error_Centered
                 )
             }
             Type.Warning -> {
                 MaterialAlertDialogBuilder(
-                    mActivity,
+                    mActivity as Context,
                     R.style.Theme_HandyFrame_MaterialDialog_Warning_Centered
                 )
             }
