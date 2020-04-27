@@ -22,13 +22,6 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".module.main.MainActivity"
-            android:theme="@style/Theme.HandyFrame.App.Activity" />
-
-        <activity
-            android:name=".module.login.LoginActivity"
-            android:theme="@style/Theme.HandyFrame.App.Activity" />
     </application>
 
 </manifest>
